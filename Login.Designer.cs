@@ -96,9 +96,9 @@
             label4.ForeColor = Color.White;
             label4.Location = new Point(83, 205);
             label4.Name = "label4";
-            label4.Size = new Size(149, 34);
+            label4.Size = new Size(143, 34);
             label4.TabIndex = 1;
-            label4.Text = "wellcome";
+            label4.Text = "welcome";
             // 
             // pictureBox1
             // 

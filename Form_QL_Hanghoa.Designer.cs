@@ -34,8 +34,6 @@
             btn_sua = new Button();
             btn_them = new Button();
             grb_thongtinsp = new GroupBox();
-            txt_mavach = new TextBox();
-            label5 = new Label();
             txt_tonkho = new TextBox();
             label6 = new Label();
             txt_gia = new TextBox();
@@ -80,7 +78,7 @@
             grB_chucnag.Controls.Add(btn_xoa);
             grB_chucnag.Controls.Add(btn_sua);
             grB_chucnag.Controls.Add(btn_them);
-            grB_chucnag.Location = new Point(3, 508);
+            grB_chucnag.Location = new Point(3, 459);
             grB_chucnag.Name = "grB_chucnag";
             grB_chucnag.Size = new Size(403, 132);
             grB_chucnag.TabIndex = 3;
@@ -140,8 +138,6 @@
             // 
             // grb_thongtinsp
             // 
-            grb_thongtinsp.Controls.Add(txt_mavach);
-            grb_thongtinsp.Controls.Add(label5);
             grb_thongtinsp.Controls.Add(txt_tonkho);
             grb_thongtinsp.Controls.Add(label6);
             grb_thongtinsp.Controls.Add(txt_gia);
@@ -158,26 +154,10 @@
             grb_thongtinsp.Controls.Add(lbl_masp);
             grb_thongtinsp.Location = new Point(3, 12);
             grb_thongtinsp.Name = "grb_thongtinsp";
-            grb_thongtinsp.Size = new Size(403, 490);
+            grb_thongtinsp.Size = new Size(403, 441);
             grb_thongtinsp.TabIndex = 2;
             grb_thongtinsp.TabStop = false;
             grb_thongtinsp.Text = "Thông tin sản phẩm";
-            // 
-            // txt_mavach
-            // 
-            txt_mavach.Location = new Point(144, 440);
-            txt_mavach.Name = "txt_mavach";
-            txt_mavach.Size = new Size(235, 27);
-            txt_mavach.TabIndex = 15;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(19, 450);
-            label5.Name = "label5";
-            label5.Size = new Size(67, 20);
-            label5.TabIndex = 14;
-            label5.Text = "Mã vạch:";
             // 
             // txt_tonkho
             // 
@@ -387,8 +367,6 @@
         private Button btn_sua;
         private Button btn_them;
         private GroupBox grb_thongtinsp;
-        private TextBox txt_mavach;
-        private Label label5;
         private TextBox txt_tonkho;
         private Label label6;
         private TextBox txt_gia;

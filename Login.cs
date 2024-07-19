@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dal_da1.Context;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Dal_da1.DomainClass;
 
 namespace DA1_formLogin
 {
@@ -44,7 +46,17 @@ namespace DA1_formLogin
         {
             Mainform mainform = new Mainform();
             mainform.Show();
-            
+            this.Hide();
+            mainform.Logout += Mainform_Logout;
+           
+
+        }
+ 
+        private void Mainform_Logout(object? sender, EventArgs e)
+        {
+            (sender as Mainform).isExit=false;
+            (sender as Mainform).Close();
+            this.Show();
         }
     }
 }

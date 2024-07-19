@@ -7,13 +7,13 @@
     <Compile Update="Form_QL_Hanghoa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form_QL_Nhanvien.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Mainform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="nhanvien\Form_QL_Nhanvien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Signup.cs">

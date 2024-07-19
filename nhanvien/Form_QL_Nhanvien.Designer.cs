@@ -34,26 +34,26 @@
             btn_sua = new Button();
             btn_them = new Button();
             grb_thongtinsp = new GroupBox();
-            textBox1 = new TextBox();
+            chkIsAdmin = new CheckBox();
+            txt_ngaythue = new TextBox();
             label7 = new Label();
-            txt_mavach = new TextBox();
+            txt_diachi = new TextBox();
             label5 = new Label();
-            txt_tonkho = new TextBox();
+            txt_email = new TextBox();
             label6 = new Label();
-            txt_gia = new TextBox();
+            label1 = new Label();
+            txt_sdt = new TextBox();
             label2 = new Label();
-            txt_macungcap = new TextBox();
-            txt_thuonghieu = new TextBox();
+            txt_mk = new TextBox();
+            txt_username = new TextBox();
             label3 = new Label();
             label4 = new Label();
-            txt_danhmuc = new TextBox();
-            label1 = new Label();
-            txt_tensp = new TextBox();
-            txt_masp = new TextBox();
+            txt_tennv = new TextBox();
+            txt_manv = new TextBox();
             lbl_tensp = new Label();
             lbl_masp = new Label();
             panel2 = new Panel();
-            lbl_donvinv = new Label();
+            btn_search = new Button();
             lbl_hienthisoluongnv = new Label();
             lbl_soluongnv = new Label();
             dtg_nhanvien = new DataGridView();
@@ -82,7 +82,7 @@
             grB_chucnag.Controls.Add(btn_xoa);
             grB_chucnag.Controls.Add(btn_sua);
             grB_chucnag.Controls.Add(btn_them);
-            grB_chucnag.Location = new Point(3, 567);
+            grB_chucnag.Location = new Point(3, 608);
             grB_chucnag.Name = "grB_chucnag";
             grB_chucnag.Size = new Size(403, 132);
             grB_chucnag.TabIndex = 18;
@@ -105,6 +105,7 @@
             btn_xoa.TabIndex = 2;
             btn_xoa.Text = "Xóa";
             btn_xoa.UseVisualStyleBackColor = false;
+            btn_xoa.Click += btn_xoa_Click;
             // 
             // btn_sua
             // 
@@ -122,6 +123,7 @@
             btn_sua.TabIndex = 1;
             btn_sua.Text = "Sửa";
             btn_sua.UseVisualStyleBackColor = false;
+            btn_sua.Click += btn_sua_Click;
             // 
             // btn_them
             // 
@@ -139,116 +141,136 @@
             btn_them.TabIndex = 0;
             btn_them.Text = "Thêm";
             btn_them.UseVisualStyleBackColor = false;
+            btn_them.Click += btn_them_Click;
             // 
             // grb_thongtinsp
             // 
-            grb_thongtinsp.Controls.Add(textBox1);
+            grb_thongtinsp.Controls.Add(chkIsAdmin);
+            grb_thongtinsp.Controls.Add(txt_ngaythue);
             grb_thongtinsp.Controls.Add(label7);
-            grb_thongtinsp.Controls.Add(txt_mavach);
+            grb_thongtinsp.Controls.Add(txt_diachi);
             grb_thongtinsp.Controls.Add(label5);
-            grb_thongtinsp.Controls.Add(txt_tonkho);
+            grb_thongtinsp.Controls.Add(txt_email);
             grb_thongtinsp.Controls.Add(label6);
-            grb_thongtinsp.Controls.Add(txt_gia);
+            grb_thongtinsp.Controls.Add(label1);
+            grb_thongtinsp.Controls.Add(txt_sdt);
             grb_thongtinsp.Controls.Add(label2);
-            grb_thongtinsp.Controls.Add(txt_macungcap);
-            grb_thongtinsp.Controls.Add(txt_thuonghieu);
+            grb_thongtinsp.Controls.Add(txt_mk);
+            grb_thongtinsp.Controls.Add(txt_username);
             grb_thongtinsp.Controls.Add(label3);
             grb_thongtinsp.Controls.Add(label4);
-            grb_thongtinsp.Controls.Add(txt_danhmuc);
-            grb_thongtinsp.Controls.Add(label1);
-            grb_thongtinsp.Controls.Add(txt_tensp);
-            grb_thongtinsp.Controls.Add(txt_masp);
+            grb_thongtinsp.Controls.Add(txt_tennv);
+            grb_thongtinsp.Controls.Add(txt_manv);
             grb_thongtinsp.Controls.Add(lbl_tensp);
             grb_thongtinsp.Controls.Add(lbl_masp);
             grb_thongtinsp.Location = new Point(3, 12);
             grb_thongtinsp.Name = "grb_thongtinsp";
-            grb_thongtinsp.Size = new Size(403, 549);
+            grb_thongtinsp.Size = new Size(403, 594);
             grb_thongtinsp.TabIndex = 2;
             grb_thongtinsp.TabStop = false;
             grb_thongtinsp.Text = "Thông tin nhân viên";
             // 
-            // textBox1
+            // chkIsAdmin
             // 
-            textBox1.Location = new Point(144, 503);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(235, 27);
-            textBox1.TabIndex = 17;
+            chkIsAdmin.AutoSize = true;
+            chkIsAdmin.Location = new Point(24, 549);
+            chkIsAdmin.Name = "chkIsAdmin";
+            chkIsAdmin.Size = new Size(75, 24);
+            chkIsAdmin.TabIndex = 18;
+            chkIsAdmin.Text = "Admin";
+            chkIsAdmin.UseVisualStyleBackColor = true;
+            // 
+            // txt_ngaythue
+            // 
+            txt_ngaythue.Location = new Point(144, 503);
+            txt_ngaythue.Name = "txt_ngaythue";
+            txt_ngaythue.ReadOnly = true;
+            txt_ngaythue.Size = new Size(235, 27);
+            txt_ngaythue.TabIndex = 17;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(19, 510);
+            label7.Location = new Point(19, 499);
             label7.Name = "label7";
             label7.Size = new Size(80, 20);
             label7.TabIndex = 16;
             label7.Text = "Ngày thuê:";
             // 
-            // txt_mavach
+            // txt_diachi
             // 
-            txt_mavach.Location = new Point(144, 445);
-            txt_mavach.Name = "txt_mavach";
-            txt_mavach.Size = new Size(235, 27);
-            txt_mavach.TabIndex = 15;
+            txt_diachi.Location = new Point(144, 436);
+            txt_diachi.Name = "txt_diachi";
+            txt_diachi.Size = new Size(235, 27);
+            txt_diachi.TabIndex = 15;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(19, 452);
+            label5.Location = new Point(19, 433);
             label5.Name = "label5";
             label5.Size = new Size(58, 20);
             label5.TabIndex = 14;
             label5.Text = "Địa chỉ:";
             // 
-            // txt_tonkho
+            // txt_email
             // 
-            txt_tonkho.Location = new Point(144, 387);
-            txt_tonkho.Name = "txt_tonkho";
-            txt_tonkho.Size = new Size(235, 27);
-            txt_tonkho.TabIndex = 13;
+            txt_email.Location = new Point(144, 369);
+            txt_email.Name = "txt_email";
+            txt_email.Size = new Size(235, 27);
+            txt_email.TabIndex = 13;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(19, 394);
+            label6.Location = new Point(19, 367);
             label6.Name = "label6";
             label6.Size = new Size(49, 20);
             label6.TabIndex = 12;
             label6.Text = "Email:";
             // 
-            // txt_gia
+            // label1
             // 
-            txt_gia.Location = new Point(144, 329);
-            txt_gia.Name = "txt_gia";
-            txt_gia.Size = new Size(235, 27);
-            txt_gia.TabIndex = 11;
+            label1.AutoSize = true;
+            label1.Location = new Point(32, 553);
+            label1.Name = "label1";
+            label1.Size = new Size(0, 20);
+            label1.TabIndex = 4;
+            // 
+            // txt_sdt
+            // 
+            txt_sdt.Location = new Point(144, 302);
+            txt_sdt.Name = "txt_sdt";
+            txt_sdt.Size = new Size(235, 27);
+            txt_sdt.TabIndex = 11;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(19, 336);
+            label2.Location = new Point(19, 301);
             label2.Name = "label2";
             label2.Size = new Size(100, 20);
             label2.TabIndex = 10;
             label2.Text = "Số điện thoại:";
             // 
-            // txt_macungcap
+            // txt_mk
             // 
-            txt_macungcap.Location = new Point(144, 271);
-            txt_macungcap.Name = "txt_macungcap";
-            txt_macungcap.Size = new Size(235, 27);
-            txt_macungcap.TabIndex = 9;
+            txt_mk.Location = new Point(144, 235);
+            txt_mk.Name = "txt_mk";
+            txt_mk.Size = new Size(235, 27);
+            txt_mk.TabIndex = 9;
             // 
-            // txt_thuonghieu
+            // txt_username
             // 
-            txt_thuonghieu.Location = new Point(144, 211);
-            txt_thuonghieu.Name = "txt_thuonghieu";
-            txt_thuonghieu.Size = new Size(235, 27);
-            txt_thuonghieu.TabIndex = 8;
+            txt_username.Location = new Point(144, 168);
+            txt_username.Name = "txt_username";
+            txt_username.Size = new Size(235, 27);
+            txt_username.TabIndex = 8;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(19, 278);
+            label3.Location = new Point(19, 235);
             label3.Name = "label3";
             label3.Size = new Size(73, 20);
             label3.TabIndex = 7;
@@ -257,46 +279,30 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(19, 214);
+            label4.Location = new Point(19, 169);
             label4.Name = "label4";
             label4.Size = new Size(110, 20);
             label4.TabIndex = 6;
             label4.Text = "Tên đăng nhập:";
             // 
-            // txt_danhmuc
+            // txt_tennv
             // 
-            txt_danhmuc.Location = new Point(144, 152);
-            txt_danhmuc.Name = "txt_danhmuc";
-            txt_danhmuc.Size = new Size(235, 27);
-            txt_danhmuc.TabIndex = 5;
+            txt_tennv.Location = new Point(144, 101);
+            txt_tennv.Name = "txt_tennv";
+            txt_tennv.Size = new Size(235, 27);
+            txt_tennv.TabIndex = 3;
             // 
-            // label1
+            // txt_manv
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(19, 159);
-            label1.Name = "label1";
-            label1.Size = new Size(55, 20);
-            label1.TabIndex = 4;
-            label1.Text = "Vai trò:";
-            // 
-            // txt_tensp
-            // 
-            txt_tensp.Location = new Point(144, 94);
-            txt_tensp.Name = "txt_tensp";
-            txt_tensp.Size = new Size(235, 27);
-            txt_tensp.TabIndex = 3;
-            // 
-            // txt_masp
-            // 
-            txt_masp.Location = new Point(144, 34);
-            txt_masp.Name = "txt_masp";
-            txt_masp.Size = new Size(235, 27);
-            txt_masp.TabIndex = 2;
+            txt_manv.Location = new Point(144, 34);
+            txt_manv.Name = "txt_manv";
+            txt_manv.Size = new Size(235, 27);
+            txt_manv.TabIndex = 2;
             // 
             // lbl_tensp
             // 
             lbl_tensp.AutoSize = true;
-            lbl_tensp.Location = new Point(19, 101);
+            lbl_tensp.Location = new Point(19, 103);
             lbl_tensp.Name = "lbl_tensp";
             lbl_tensp.Size = new Size(102, 20);
             lbl_tensp.TabIndex = 1;
@@ -314,7 +320,7 @@
             // panel2
             // 
             panel2.AutoScroll = true;
-            panel2.Controls.Add(lbl_donvinv);
+            panel2.Controls.Add(btn_search);
             panel2.Controls.Add(lbl_hienthisoluongnv);
             panel2.Controls.Add(lbl_soluongnv);
             panel2.Controls.Add(dtg_nhanvien);
@@ -326,14 +332,22 @@
             panel2.Size = new Size(871, 740);
             panel2.TabIndex = 3;
             // 
-            // lbl_donvinv
+            // btn_search
             // 
-            lbl_donvinv.AutoSize = true;
-            lbl_donvinv.Location = new Point(203, 551);
-            lbl_donvinv.Name = "lbl_donvinv";
-            lbl_donvinv.Size = new Size(72, 20);
-            lbl_donvinv.TabIndex = 16;
-            lbl_donvinv.Text = "nhân viên";
+            btn_search.BackColor = Color.FromArgb(7, 167, 233);
+            btn_search.Cursor = Cursors.Hand;
+            btn_search.FlatAppearance.BorderSize = 0;
+            btn_search.FlatStyle = FlatStyle.Flat;
+            btn_search.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_search.ForeColor = Color.White;
+            btn_search.Image = Properties.Resources.search__1_;
+            btn_search.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_search.Location = new Point(528, 10);
+            btn_search.Name = "btn_search";
+            btn_search.Size = new Size(123, 29);
+            btn_search.TabIndex = 17;
+            btn_search.Text = "Tìm kiếm";
+            btn_search.UseVisualStyleBackColor = false;
             // 
             // lbl_hienthisoluongnv
             // 
@@ -361,13 +375,15 @@
             dtg_nhanvien.RowHeadersWidth = 51;
             dtg_nhanvien.Size = new Size(694, 466);
             dtg_nhanvien.TabIndex = 13;
+            dtg_nhanvien.CellClick += dtg_nhanvien_CellClick;
             // 
             // txt_timkiemnv
             // 
             txt_timkiemnv.Location = new Point(214, 12);
             txt_timkiemnv.Name = "txt_timkiemnv";
-            txt_timkiemnv.Size = new Size(226, 27);
+            txt_timkiemnv.Size = new Size(296, 27);
             txt_timkiemnv.TabIndex = 12;
+            txt_timkiemnv.TextChanged += txt_timkiemnv_TextChanged;
             // 
             // lbl_timkiemnv
             // 
@@ -402,20 +418,18 @@
 
         private Panel panel1;
         private GroupBox grb_thongtinsp;
-        private TextBox txt_mavach;
+        private TextBox txt_diachi;
         private Label label5;
-        private TextBox txt_tonkho;
+        private TextBox txt_email;
         private Label label6;
-        private TextBox txt_gia;
+        private TextBox txt_sdt;
         private Label label2;
-        private TextBox txt_macungcap;
-        private TextBox txt_thuonghieu;
+        private TextBox txt_mk;
+        private TextBox txt_username;
         private Label label3;
         private Label label4;
-        private TextBox txt_danhmuc;
-        private Label label1;
-        private TextBox txt_tensp;
-        private TextBox txt_masp;
+        private TextBox txt_tennv;
+        private TextBox txt_manv;
         private Label lbl_tensp;
         private Label lbl_masp;
         private Panel panel2;
@@ -424,12 +438,14 @@
         private DataGridView dtg_nhanvien;
         private TextBox txt_timkiemnv;
         private Label lbl_timkiemnv;
-        private TextBox textBox1;
+        private TextBox txt_ngaythue;
         private Label label7;
-        private Label lbl_donvinv;
         private GroupBox grB_chucnag;
         private Button btn_xoa;
         private Button btn_sua;
         private Button btn_them;
+        private CheckBox chkIsAdmin;
+        private Label label1;
+        private Button btn_search;
     }
 }

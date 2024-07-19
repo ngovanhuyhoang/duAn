@@ -35,6 +35,7 @@
             btn_sell = new Button();
             pictureBox1 = new PictureBox();
             panel_body = new Panel();
+            btn_dangxuat = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -42,6 +43,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(35, 168, 242);
+            panel1.Controls.Add(btn_dangxuat);
             panel1.Controls.Add(btn_nhanvien);
             panel1.Controls.Add(btn_hanghoa);
             panel1.Controls.Add(btn_sell);
@@ -123,6 +125,23 @@
             panel_body.Size = new Size(1149, 670);
             panel_body.TabIndex = 1;
             // 
+            // btn_dangxuat
+            // 
+            btn_dangxuat.Cursor = Cursors.Hand;
+            btn_dangxuat.FlatAppearance.BorderSize = 0;
+            btn_dangxuat.FlatStyle = FlatStyle.Flat;
+            btn_dangxuat.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_dangxuat.ForeColor = Color.White;
+            btn_dangxuat.Image = (Image)resources.GetObject("btn_dangxuat.Image");
+            btn_dangxuat.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_dangxuat.Location = new Point(0, 476);
+            btn_dangxuat.Name = "btn_dangxuat";
+            btn_dangxuat.Size = new Size(250, 76);
+            btn_dangxuat.TabIndex = 4;
+            btn_dangxuat.Text = "Đăng Xuất";
+            btn_dangxuat.UseVisualStyleBackColor = true;
+            btn_dangxuat.Click += btn_dangxuat_Click;
+            // 
             // Mainform
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -134,6 +153,8 @@
             Name = "Mainform";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Mainform";
+            FormClosing += Mainform_FormClosing;
+            FormClosed += Mainform_FormClosed;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -147,5 +168,6 @@
         private Button btn_nhanvien;
         private Button btn_hanghoa;
         private Panel panel_body;
+        private Button btn_dangxuat;
     }
 }

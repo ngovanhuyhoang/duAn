@@ -11,7 +11,11 @@ using System.Windows.Forms;
 namespace DA1_formLogin
 {
     public partial class Mainform : Form
-    {
+    {   
+        public bool isExit = true;
+        public event EventHandler Logout;
+
+
         public Mainform()
         {
             InitializeComponent();
@@ -55,6 +59,26 @@ namespace DA1_formLogin
             {
                 formchild_hientai.Close();
             }
+        }
+
+        private void Mainform_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (isExit)
+                Application.Exit();
+        }
+
+        private void Mainform_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (isExit)
+            {
+                if (MessageBox.Show("bạn muốn thoát chương trình", "cảnh báo", MessageBoxButtons.YesNo) != DialogResult.Yes)
+                    e.Cancel = true;
+            }
+        }
+
+        private void btn_dangxuat_Click(object sender, EventArgs e)
+        {
+            Logout(this, new EventArgs());
         }
     }
 }
