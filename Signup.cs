@@ -44,12 +44,10 @@ namespace DA1_formLogin
 
         private void btn_signup_Click(object sender, EventArgs e)
         {
-            string email = txt_signup_email.Text;
             string username = txtUsername_Signup.Text;
             string password = txt_password_signup.Text;
-            string chucVu = cboChucVu.SelectedItem.ToString();
 
-            if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
             {
                 MessageBox.Show("Hãy điền đủ các trường thông tin.");
                 return;
@@ -65,10 +63,8 @@ namespace DA1_formLogin
                     return;
                     var newUser = new NhanVien
                     {
-                        //email = email,
                         Username = username,
                         Password = password,
-                        TenChucVu = chucVu // Lưu tên chức vụ
                     };
 
                     context.NhanViens.Add(newUser);
@@ -79,5 +75,7 @@ namespace DA1_formLogin
 
             }
         }
+
+        
     }
 }

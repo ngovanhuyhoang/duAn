@@ -36,6 +36,7 @@
             label4 = new Label();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
+            cboChucVu = new ComboBox();
             txt_password_signup = new TextBox();
             pictureBox_password_signup = new PictureBox();
             lbl_password_signup = new Label();
@@ -44,18 +45,14 @@
             lbl_alreadyhave = new Label();
             signup_btnclose = new Button();
             btn_signup = new Button();
-            picture_signup_username = new PictureBox();
             pictureBox_email = new PictureBox();
             lbl_username_signup = new Label();
-            txt_signup_email = new TextBox();
             lbl_email = new Label();
             lbl_getstarted = new Label();
-            cboChucVu = new ComboBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox_password_signup).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)picture_signup_username).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_email).BeginInit();
             SuspendLayout();
             // 
@@ -134,17 +131,22 @@
             panel2.Controls.Add(lbl_alreadyhave);
             panel2.Controls.Add(signup_btnclose);
             panel2.Controls.Add(btn_signup);
-            panel2.Controls.Add(picture_signup_username);
             panel2.Controls.Add(pictureBox_email);
             panel2.Controls.Add(lbl_username_signup);
-            panel2.Controls.Add(txt_signup_email);
             panel2.Controls.Add(lbl_email);
             panel2.Controls.Add(lbl_getstarted);
-            panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(300, 0);
+            panel2.Location = new Point(300, 40);
             panel2.Name = "panel2";
-            panel2.Size = new Size(440, 530);
+            panel2.Size = new Size(440, 490);
             panel2.TabIndex = 2;
+            // 
+            // cboChucVu
+            // 
+            cboChucVu.FormattingEnabled = true;
+            cboChucVu.Location = new Point(28, 141);
+            cboChucVu.Name = "cboChucVu";
+            cboChucVu.Size = new Size(400, 28);
+            cboChucVu.TabIndex = 17;
             // 
             // txt_password_signup
             // 
@@ -243,17 +245,6 @@
             btn_signup.UseVisualStyleBackColor = false;
             btn_signup.Click += btn_signup_Click;
             // 
-            // picture_signup_username
-            // 
-            picture_signup_username.BackColor = Color.White;
-            picture_signup_username.Image = (Image)resources.GetObject("picture_signup_username.Image");
-            picture_signup_username.Location = new Point(28, 133);
-            picture_signup_username.Name = "picture_signup_username";
-            picture_signup_username.Size = new Size(35, 27);
-            picture_signup_username.SizeMode = PictureBoxSizeMode.Zoom;
-            picture_signup_username.TabIndex = 9;
-            picture_signup_username.TabStop = false;
-            // 
             // pictureBox_email
             // 
             pictureBox_email.BackColor = Color.White;
@@ -276,15 +267,6 @@
             lbl_username_signup.TabIndex = 7;
             lbl_username_signup.Text = "Username";
             // 
-            // txt_signup_email
-            // 
-            txt_signup_email.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txt_signup_email.ForeColor = Color.FromArgb(41, 128, 185);
-            txt_signup_email.Location = new Point(60, 132);
-            txt_signup_email.Name = "txt_signup_email";
-            txt_signup_email.Size = new Size(368, 28);
-            txt_signup_email.TabIndex = 0;
-            // 
             // lbl_email
             // 
             lbl_email.AutoSize = true;
@@ -292,9 +274,9 @@
             lbl_email.ForeColor = Color.DimGray;
             lbl_email.Location = new Point(28, 107);
             lbl_email.Name = "lbl_email";
-            lbl_email.Size = new Size(46, 20);
+            lbl_email.Size = new Size(73, 20);
             lbl_email.TabIndex = 5;
-            lbl_email.Text = "Email";
+            lbl_email.Text = "User role";
             // 
             // lbl_getstarted
             // 
@@ -306,14 +288,6 @@
             lbl_getstarted.Size = new Size(122, 23);
             lbl_getstarted.TabIndex = 4;
             lbl_getstarted.Text = "Get started";
-            // 
-            // cboChucVu
-            // 
-            cboChucVu.FormattingEnabled = true;
-            cboChucVu.Location = new Point(277, 350);
-            cboChucVu.Name = "cboChucVu";
-            cboChucVu.Size = new Size(151, 28);
-            cboChucVu.TabIndex = 17;
             // 
             // Signup
             // 
@@ -334,7 +308,6 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox_password_signup).EndInit();
-            ((System.ComponentModel.ISupportInitialize)picture_signup_username).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_email).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -357,10 +330,8 @@
         private Label lbl_alreadyhave;
         private Button signup_btnclose;
         private Button btn_signup;
-        private PictureBox picture_signup_username;
         private PictureBox pictureBox_email;
         private Label lbl_username_signup;
-        private TextBox txt_signup_email;
         private Label lbl_email;
         private Label lbl_getstarted;
         private ComboBox cboChucVu;

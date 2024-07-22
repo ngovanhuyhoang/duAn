@@ -34,13 +34,13 @@
             btn_sua = new Button();
             btn_them = new Button();
             grb_thongtinsp = new GroupBox();
-            chkIsAdmin = new CheckBox();
+            chkDaThoiViec = new CheckBox();
             txt_ngaythue = new TextBox();
             label7 = new Label();
             txt_diachi = new TextBox();
             label5 = new Label();
-            txt_email = new TextBox();
-            label6 = new Label();
+            txt_role = new TextBox();
+            txt_ngaysinh = new Label();
             label1 = new Label();
             txt_sdt = new TextBox();
             label2 = new Label();
@@ -53,10 +53,9 @@
             lbl_tensp = new Label();
             lbl_masp = new Label();
             panel2 = new Panel();
-            label9 = new Label();
-            label8 = new Label();
-            cmbThuongHieu = new ComboBox();
-            cmbDanhMuc = new ComboBox();
+            chkDaThoiViec2 = new CheckBox();
+            label6 = new Label();
+            cmbChucVu = new ComboBox();
             btn_search = new Button();
             lbl_hienthisoluongnv = new Label();
             lbl_soluongnv = new Label();
@@ -130,13 +129,13 @@
             // 
             // grb_thongtinsp
             // 
-            grb_thongtinsp.Controls.Add(chkIsAdmin);
+            grb_thongtinsp.Controls.Add(chkDaThoiViec);
             grb_thongtinsp.Controls.Add(txt_ngaythue);
             grb_thongtinsp.Controls.Add(label7);
             grb_thongtinsp.Controls.Add(txt_diachi);
             grb_thongtinsp.Controls.Add(label5);
-            grb_thongtinsp.Controls.Add(txt_email);
-            grb_thongtinsp.Controls.Add(label6);
+            grb_thongtinsp.Controls.Add(txt_role);
+            grb_thongtinsp.Controls.Add(txt_ngaysinh);
             grb_thongtinsp.Controls.Add(label1);
             grb_thongtinsp.Controls.Add(txt_sdt);
             grb_thongtinsp.Controls.Add(label2);
@@ -155,15 +154,15 @@
             grb_thongtinsp.TabStop = false;
             grb_thongtinsp.Text = "Thông tin nhân viên";
             // 
-            // chkIsAdmin
+            // chkDaThoiViec
             // 
-            chkIsAdmin.AutoSize = true;
-            chkIsAdmin.Location = new Point(24, 549);
-            chkIsAdmin.Name = "chkIsAdmin";
-            chkIsAdmin.Size = new Size(75, 24);
-            chkIsAdmin.TabIndex = 18;
-            chkIsAdmin.Text = "Admin";
-            chkIsAdmin.UseVisualStyleBackColor = true;
+            chkDaThoiViec.AutoSize = true;
+            chkDaThoiViec.Location = new Point(19, 553);
+            chkDaThoiViec.Name = "chkDaThoiViec";
+            chkDaThoiViec.Size = new Size(110, 24);
+            chkDaThoiViec.TabIndex = 18;
+            chkDaThoiViec.Text = "Đã thôi việc";
+            chkDaThoiViec.UseVisualStyleBackColor = true;
             // 
             // txt_ngaythue
             // 
@@ -198,21 +197,21 @@
             label5.TabIndex = 14;
             label5.Text = "Địa chỉ:";
             // 
-            // txt_email
+            // txt_role
             // 
-            txt_email.Location = new Point(144, 369);
-            txt_email.Name = "txt_email";
-            txt_email.Size = new Size(235, 27);
-            txt_email.TabIndex = 13;
+            txt_role.Location = new Point(144, 369);
+            txt_role.Name = "txt_role";
+            txt_role.Size = new Size(235, 27);
+            txt_role.TabIndex = 13;
             // 
-            // label6
+            // txt_ngaysinh
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(19, 367);
-            label6.Name = "label6";
-            label6.Size = new Size(49, 20);
-            label6.TabIndex = 12;
-            label6.Text = "Email:";
+            txt_ngaysinh.AutoSize = true;
+            txt_ngaysinh.Location = new Point(19, 367);
+            txt_ngaysinh.Name = "txt_ngaysinh";
+            txt_ngaysinh.Size = new Size(64, 20);
+            txt_ngaysinh.TabIndex = 12;
+            txt_ngaysinh.Text = "Chức vụ:";
             // 
             // label1
             // 
@@ -305,10 +304,9 @@
             // panel2
             // 
             panel2.AutoScroll = true;
-            panel2.Controls.Add(label9);
-            panel2.Controls.Add(label8);
-            panel2.Controls.Add(cmbThuongHieu);
-            panel2.Controls.Add(cmbDanhMuc);
+            panel2.Controls.Add(chkDaThoiViec2);
+            panel2.Controls.Add(label6);
+            panel2.Controls.Add(cmbChucVu);
             panel2.Controls.Add(btn_search);
             panel2.Controls.Add(lbl_hienthisoluongnv);
             panel2.Controls.Add(lbl_soluongnv);
@@ -321,41 +319,34 @@
             panel2.Size = new Size(871, 900);
             panel2.TabIndex = 3;
             // 
-            // label9
+            // chkDaThoiViec2
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(447, 591);
-            label9.Name = "label9";
-            label9.Size = new Size(95, 20);
-            label9.TabIndex = 21;
-            label9.Text = "Thương hiệu:";
+            chkDaThoiViec2.AutoSize = true;
+            chkDaThoiViec2.Location = new Point(552, 554);
+            chkDaThoiViec2.Name = "chkDaThoiViec2";
+            chkDaThoiViec2.Size = new Size(110, 24);
+            chkDaThoiViec2.TabIndex = 19;
+            chkDaThoiViec2.Text = "Đã thôi việc";
+            chkDaThoiViec2.UseVisualStyleBackColor = true;
+            chkDaThoiViec2.CheckedChanged += chkDaThoiViec2_CheckedChanged;
             // 
-            // label8
+            // label6
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(447, 546);
-            label8.Name = "label8";
-            label8.Size = new Size(79, 20);
-            label8.TabIndex = 20;
-            label8.Text = "Danh mục:";
+            label6.AutoSize = true;
+            label6.Location = new Point(273, 554);
+            label6.Name = "label6";
+            label6.Size = new Size(64, 20);
+            label6.TabIndex = 19;
+            label6.Text = "Chức vụ:";
             // 
-            // cmbThuongHieu
+            // cmbChucVu
             // 
-            cmbThuongHieu.FormattingEnabled = true;
-            cmbThuongHieu.Location = new Point(549, 588);
-            cmbThuongHieu.Name = "cmbThuongHieu";
-            cmbThuongHieu.Size = new Size(151, 28);
-            cmbThuongHieu.TabIndex = 19;
-            cmbThuongHieu.SelectedIndexChanged += cmbThuongHieu_SelectedIndexChanged;
-            // 
-            // cmbDanhMuc
-            // 
-            cmbDanhMuc.FormattingEnabled = true;
-            cmbDanhMuc.Location = new Point(549, 543);
-            cmbDanhMuc.Name = "cmbDanhMuc";
-            cmbDanhMuc.Size = new Size(151, 28);
-            cmbDanhMuc.TabIndex = 18;
-            cmbDanhMuc.SelectedIndexChanged += cmbDanhMuc_SelectedIndexChanged;
+            cmbChucVu.FormattingEnabled = true;
+            cmbChucVu.Location = new Point(359, 551);
+            cmbChucVu.Name = "cmbChucVu";
+            cmbChucVu.Size = new Size(151, 28);
+            cmbChucVu.TabIndex = 18;
+            cmbChucVu.SelectedIndexChanged += cmbChucVu_SelectedIndexChanged;
             // 
             // btn_search
             // 
@@ -448,8 +439,8 @@
         private GroupBox grb_thongtinsp;
         private TextBox txt_diachi;
         private Label label5;
-        private TextBox txt_email;
-        private Label label6;
+        private TextBox txt_role;
+        private Label txt_ngaysinh;
         private TextBox txt_sdt;
         private Label label2;
         private TextBox txt_mk;
@@ -471,12 +462,11 @@
         private GroupBox grB_chucnag;
         private Button btn_sua;
         private Button btn_them;
-        private CheckBox chkIsAdmin;
         private Label label1;
         private Button btn_search;
-        private Label label9;
-        private Label label8;
-        private ComboBox cmbThuongHieu;
-        private ComboBox cmbDanhMuc;
+        private CheckBox chkDaThoiViec;
+        private Label label6;
+        private ComboBox cmbChucVu;
+        private CheckBox chkDaThoiViec2;
     }
 }

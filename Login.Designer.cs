@@ -38,8 +38,6 @@
             txt_password_login = new TextBox();
             pictureBox_password_Login = new PictureBox();
             label8 = new Label();
-            btn_registerhere = new Button();
-            lbl_donthaveacc = new Label();
             Login_btnclose = new Button();
             btn_forgotpass = new Button();
             btn_login = new Button();
@@ -115,8 +113,6 @@
             panel2.Controls.Add(txt_password_login);
             panel2.Controls.Add(pictureBox_password_Login);
             panel2.Controls.Add(label8);
-            panel2.Controls.Add(btn_registerhere);
-            panel2.Controls.Add(lbl_donthaveacc);
             panel2.Controls.Add(Login_btnclose);
             panel2.Controls.Add(btn_forgotpass);
             panel2.Controls.Add(btn_login);
@@ -164,33 +160,6 @@
             label8.Size = new Size(79, 20);
             label8.TabIndex = 15;
             label8.Text = "Password";
-            // 
-            // btn_registerhere
-            // 
-            btn_registerhere.BackColor = SystemColors.Control;
-            btn_registerhere.Cursor = Cursors.Hand;
-            btn_registerhere.FlatAppearance.BorderSize = 0;
-            btn_registerhere.FlatStyle = FlatStyle.Flat;
-            btn_registerhere.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btn_registerhere.ForeColor = Color.FromArgb(41, 128, 185);
-            btn_registerhere.Location = new Point(247, 472);
-            btn_registerhere.Name = "btn_registerhere";
-            btn_registerhere.Size = new Size(137, 25);
-            btn_registerhere.TabIndex = 4;
-            btn_registerhere.Text = "Register here";
-            btn_registerhere.UseVisualStyleBackColor = false;
-            btn_registerhere.Click += btn_registerhere_Click;
-            // 
-            // lbl_donthaveacc
-            // 
-            lbl_donthaveacc.AutoSize = true;
-            lbl_donthaveacc.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbl_donthaveacc.ForeColor = Color.Silver;
-            lbl_donthaveacc.Location = new Point(60, 476);
-            lbl_donthaveacc.Name = "lbl_donthaveacc";
-            lbl_donthaveacc.Size = new Size(168, 17);
-            lbl_donthaveacc.TabIndex = 4;
-            lbl_donthaveacc.Text = "Don't have an account?";
             // 
             // Login_btnclose
             // 
@@ -311,8 +280,6 @@
         private TextBox txt_password_login;
         private PictureBox pictureBox_password_Login;
         private Label label8;
-        private Button btn_registerhere;
-        private Label lbl_donthaveacc;
         private Button Login_btnclose;
         private Button btn_forgotpass;
         private Button btn_login;
