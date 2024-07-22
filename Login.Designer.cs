@@ -96,9 +96,9 @@
             label4.ForeColor = Color.White;
             label4.Location = new Point(83, 205);
             label4.Name = "label4";
-            label4.Size = new Size(149, 34);
+            label4.Size = new Size(143, 34);
             label4.TabIndex = 1;
-            label4.Text = "wellcome";
+            label4.Text = "welcome";
             // 
             // pictureBox1
             // 
@@ -137,7 +137,7 @@
             txt_password_login.Location = new Point(60, 289);
             txt_password_login.Name = "txt_password_login";
             txt_password_login.Size = new Size(368, 28);
-            txt_password_login.TabIndex = 17;
+            txt_password_login.TabIndex = 1;
             txt_password_login.UseSystemPasswordChar = true;
             // 
             // pictureBox_password_Login
@@ -176,7 +176,7 @@
             btn_registerhere.Location = new Point(247, 472);
             btn_registerhere.Name = "btn_registerhere";
             btn_registerhere.Size = new Size(137, 25);
-            btn_registerhere.TabIndex = 14;
+            btn_registerhere.TabIndex = 4;
             btn_registerhere.Text = "Register here";
             btn_registerhere.UseVisualStyleBackColor = false;
             btn_registerhere.Click += btn_registerhere_Click;
@@ -217,9 +217,10 @@
             btn_forgotpass.Location = new Point(189, 352);
             btn_forgotpass.Name = "btn_forgotpass";
             btn_forgotpass.Size = new Size(137, 25);
-            btn_forgotpass.TabIndex = 11;
+            btn_forgotpass.TabIndex = 3;
             btn_forgotpass.Text = "Forgot Password ?";
             btn_forgotpass.UseVisualStyleBackColor = false;
+            btn_forgotpass.Click += btn_forgotpass_Click;
             // 
             // btn_login
             // 
@@ -231,7 +232,7 @@
             btn_login.Location = new Point(21, 345);
             btn_login.Name = "btn_login";
             btn_login.Size = new Size(148, 35);
-            btn_login.TabIndex = 10;
+            btn_login.TabIndex = 2;
             btn_login.Text = "LOGIN";
             btn_login.UseVisualStyleBackColor = false;
             btn_login.Click += btn_login_Click;
@@ -254,7 +255,7 @@
             txt_Login_Username.Location = new Point(60, 213);
             txt_Login_Username.Name = "txt_Login_Username";
             txt_Login_Username.Size = new Size(368, 28);
-            txt_Login_Username.TabIndex = 6;
+            txt_Login_Username.TabIndex = 0;
             // 
             // label5
             // 

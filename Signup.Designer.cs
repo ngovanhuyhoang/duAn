@@ -43,7 +43,6 @@
             txtUsername_Signup = new TextBox();
             lbl_alreadyhave = new Label();
             signup_btnclose = new Button();
-            btn_forgotpass = new Button();
             btn_signup = new Button();
             picture_signup_username = new PictureBox();
             pictureBox_email = new PictureBox();
@@ -51,6 +50,7 @@
             txt_signup_email = new TextBox();
             lbl_email = new Label();
             lbl_getstarted = new Label();
+            cboChucVu = new ComboBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -109,9 +109,9 @@
             label4.ForeColor = Color.White;
             label4.Location = new Point(83, 205);
             label4.Name = "label4";
-            label4.Size = new Size(149, 34);
+            label4.Size = new Size(143, 34);
             label4.TabIndex = 1;
-            label4.Text = "wellcome";
+            label4.Text = "welcome";
             // 
             // pictureBox1
             // 
@@ -125,6 +125,7 @@
             // 
             // panel2
             // 
+            panel2.Controls.Add(cboChucVu);
             panel2.Controls.Add(txt_password_signup);
             panel2.Controls.Add(pictureBox_password_signup);
             panel2.Controls.Add(lbl_password_signup);
@@ -132,7 +133,6 @@
             panel2.Controls.Add(txtUsername_Signup);
             panel2.Controls.Add(lbl_alreadyhave);
             panel2.Controls.Add(signup_btnclose);
-            panel2.Controls.Add(btn_forgotpass);
             panel2.Controls.Add(btn_signup);
             panel2.Controls.Add(picture_signup_username);
             panel2.Controls.Add(pictureBox_email);
@@ -153,7 +153,7 @@
             txt_password_signup.Location = new Point(60, 289);
             txt_password_signup.Name = "txt_password_signup";
             txt_password_signup.Size = new Size(368, 28);
-            txt_password_signup.TabIndex = 17;
+            txt_password_signup.TabIndex = 2;
             txt_password_signup.UseSystemPasswordChar = true;
             // 
             // pictureBox_password_signup
@@ -190,7 +190,7 @@
             btn_loginhere.Location = new Point(247, 472);
             btn_loginhere.Name = "btn_loginhere";
             btn_loginhere.Size = new Size(137, 25);
-            btn_loginhere.TabIndex = 14;
+            btn_loginhere.TabIndex = 4;
             btn_loginhere.Text = "Login here";
             btn_loginhere.UseVisualStyleBackColor = false;
             btn_loginhere.Click += btn_loginhere_Click;
@@ -202,7 +202,7 @@
             txtUsername_Signup.Location = new Point(60, 208);
             txtUsername_Signup.Name = "txtUsername_Signup";
             txtUsername_Signup.Size = new Size(368, 28);
-            txtUsername_Signup.TabIndex = 13;
+            txtUsername_Signup.TabIndex = 1;
             // 
             // lbl_alreadyhave
             // 
@@ -229,20 +229,6 @@
             signup_btnclose.UseVisualStyleBackColor = true;
             signup_btnclose.Click += signup_btnclose_Click;
             // 
-            // btn_forgotpass
-            // 
-            btn_forgotpass.BackColor = SystemColors.Control;
-            btn_forgotpass.FlatAppearance.BorderSize = 0;
-            btn_forgotpass.FlatStyle = FlatStyle.Flat;
-            btn_forgotpass.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btn_forgotpass.ForeColor = Color.FromArgb(41, 128, 185);
-            btn_forgotpass.Location = new Point(189, 352);
-            btn_forgotpass.Name = "btn_forgotpass";
-            btn_forgotpass.Size = new Size(137, 25);
-            btn_forgotpass.TabIndex = 11;
-            btn_forgotpass.Text = "Forgot Password ?";
-            btn_forgotpass.UseVisualStyleBackColor = false;
-            // 
             // btn_signup
             // 
             btn_signup.BackColor = Color.FromArgb(41, 128, 185);
@@ -252,9 +238,10 @@
             btn_signup.Location = new Point(21, 345);
             btn_signup.Name = "btn_signup";
             btn_signup.Size = new Size(148, 35);
-            btn_signup.TabIndex = 10;
+            btn_signup.TabIndex = 3;
             btn_signup.Text = "SIGNUP";
             btn_signup.UseVisualStyleBackColor = false;
+            btn_signup.Click += btn_signup_Click;
             // 
             // picture_signup_username
             // 
@@ -296,7 +283,7 @@
             txt_signup_email.Location = new Point(60, 132);
             txt_signup_email.Name = "txt_signup_email";
             txt_signup_email.Size = new Size(368, 28);
-            txt_signup_email.TabIndex = 6;
+            txt_signup_email.TabIndex = 0;
             // 
             // lbl_email
             // 
@@ -319,6 +306,14 @@
             lbl_getstarted.Size = new Size(122, 23);
             lbl_getstarted.TabIndex = 4;
             lbl_getstarted.Text = "Get started";
+            // 
+            // cboChucVu
+            // 
+            cboChucVu.FormattingEnabled = true;
+            cboChucVu.Location = new Point(277, 350);
+            cboChucVu.Name = "cboChucVu";
+            cboChucVu.Size = new Size(151, 28);
+            cboChucVu.TabIndex = 17;
             // 
             // Signup
             // 
@@ -368,6 +363,6 @@
         private TextBox txt_signup_email;
         private Label lbl_email;
         private Label lbl_getstarted;
-        private Button btn_forgotpass;
+        private ComboBox cboChucVu;
     }
 }

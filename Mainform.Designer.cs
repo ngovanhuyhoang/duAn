@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mainform));
             panel1 = new Panel();
+            btn_dangxuat = new Button();
             btn_nhanvien = new Button();
             btn_hanghoa = new Button();
             btn_sell = new Button();
@@ -42,6 +43,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(35, 168, 242);
+            panel1.Controls.Add(btn_dangxuat);
             panel1.Controls.Add(btn_nhanvien);
             panel1.Controls.Add(btn_hanghoa);
             panel1.Controls.Add(btn_sell);
@@ -49,8 +51,25 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(250, 670);
+            panel1.Size = new Size(250, 701);
             panel1.TabIndex = 0;
+            // 
+            // btn_dangxuat
+            // 
+            btn_dangxuat.Cursor = Cursors.Hand;
+            btn_dangxuat.FlatAppearance.BorderSize = 0;
+            btn_dangxuat.FlatStyle = FlatStyle.Flat;
+            btn_dangxuat.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_dangxuat.ForeColor = Color.White;
+            btn_dangxuat.Image = (Image)resources.GetObject("btn_dangxuat.Image");
+            btn_dangxuat.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_dangxuat.Location = new Point(0, 625);
+            btn_dangxuat.Name = "btn_dangxuat";
+            btn_dangxuat.Size = new Size(250, 76);
+            btn_dangxuat.TabIndex = 4;
+            btn_dangxuat.Text = "Đăng Xuất";
+            btn_dangxuat.UseVisualStyleBackColor = true;
+            btn_dangxuat.Click += btn_dangxuat_Click;
             // 
             // btn_nhanvien
             // 
@@ -120,7 +139,7 @@
             panel_body.Dock = DockStyle.Fill;
             panel_body.Location = new Point(250, 0);
             panel_body.Name = "panel_body";
-            panel_body.Size = new Size(1149, 670);
+            panel_body.Size = new Size(1161, 701);
             panel_body.TabIndex = 1;
             // 
             // Mainform
@@ -128,12 +147,14 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
-            ClientSize = new Size(1399, 670);
+            ClientSize = new Size(1411, 701);
             Controls.Add(panel_body);
             Controls.Add(panel1);
             Name = "Mainform";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Mainform";
+            FormClosing += Mainform_FormClosing;
+            FormClosed += Mainform_FormClosed;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -147,5 +168,6 @@
         private Button btn_nhanvien;
         private Button btn_hanghoa;
         private Panel panel_body;
+        private Button btn_dangxuat;
     }
 }
