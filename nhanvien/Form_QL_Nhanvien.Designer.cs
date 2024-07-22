@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_QL_Nhanvien));
             panel1 = new Panel();
             grB_chucnag = new GroupBox();
-            btn_xoa = new Button();
             btn_sua = new Button();
             btn_them = new Button();
             grb_thongtinsp = new GroupBox();
@@ -53,6 +53,10 @@
             lbl_tensp = new Label();
             lbl_masp = new Label();
             panel2 = new Panel();
+            label9 = new Label();
+            label8 = new Label();
+            cmbThuongHieu = new ComboBox();
+            cmbDanhMuc = new ComboBox();
             btn_search = new Button();
             lbl_hienthisoluongnv = new Label();
             lbl_soluongnv = new Label();
@@ -74,12 +78,11 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(419, 740);
+            panel1.Size = new Size(419, 900);
             panel1.TabIndex = 2;
             // 
             // grB_chucnag
             // 
-            grB_chucnag.Controls.Add(btn_xoa);
             grB_chucnag.Controls.Add(btn_sua);
             grB_chucnag.Controls.Add(btn_them);
             grB_chucnag.Location = new Point(3, 608);
@@ -88,24 +91,6 @@
             grB_chucnag.TabIndex = 18;
             grB_chucnag.TabStop = false;
             grB_chucnag.Text = "Chức năng";
-            // 
-            // btn_xoa
-            // 
-            btn_xoa.BackColor = Color.FromArgb(224, 55, 73);
-            btn_xoa.Cursor = Cursors.Hand;
-            btn_xoa.FlatAppearance.BorderSize = 0;
-            btn_xoa.FlatStyle = FlatStyle.Flat;
-            btn_xoa.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_xoa.ForeColor = Color.White;
-            btn_xoa.Image = Properties.Resources.delete;
-            btn_xoa.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_xoa.Location = new Point(277, 45);
-            btn_xoa.Name = "btn_xoa";
-            btn_xoa.Size = new Size(120, 48);
-            btn_xoa.TabIndex = 2;
-            btn_xoa.Text = "Xóa";
-            btn_xoa.UseVisualStyleBackColor = false;
-            btn_xoa.Click += btn_xoa_Click;
             // 
             // btn_sua
             // 
@@ -320,6 +305,10 @@
             // panel2
             // 
             panel2.AutoScroll = true;
+            panel2.Controls.Add(label9);
+            panel2.Controls.Add(label8);
+            panel2.Controls.Add(cmbThuongHieu);
+            panel2.Controls.Add(cmbDanhMuc);
             panel2.Controls.Add(btn_search);
             panel2.Controls.Add(lbl_hienthisoluongnv);
             panel2.Controls.Add(lbl_soluongnv);
@@ -329,8 +318,44 @@
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(419, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(871, 740);
+            panel2.Size = new Size(871, 900);
             panel2.TabIndex = 3;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(447, 591);
+            label9.Name = "label9";
+            label9.Size = new Size(95, 20);
+            label9.TabIndex = 21;
+            label9.Text = "Thương hiệu:";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(447, 546);
+            label8.Name = "label8";
+            label8.Size = new Size(79, 20);
+            label8.TabIndex = 20;
+            label8.Text = "Danh mục:";
+            // 
+            // cmbThuongHieu
+            // 
+            cmbThuongHieu.FormattingEnabled = true;
+            cmbThuongHieu.Location = new Point(549, 588);
+            cmbThuongHieu.Name = "cmbThuongHieu";
+            cmbThuongHieu.Size = new Size(151, 28);
+            cmbThuongHieu.TabIndex = 19;
+            cmbThuongHieu.SelectedIndexChanged += cmbThuongHieu_SelectedIndexChanged;
+            // 
+            // cmbDanhMuc
+            // 
+            cmbDanhMuc.FormattingEnabled = true;
+            cmbDanhMuc.Location = new Point(549, 543);
+            cmbDanhMuc.Name = "cmbDanhMuc";
+            cmbDanhMuc.Size = new Size(151, 28);
+            cmbDanhMuc.TabIndex = 18;
+            cmbDanhMuc.SelectedIndexChanged += cmbDanhMuc_SelectedIndexChanged;
             // 
             // btn_search
             // 
@@ -340,14 +365,15 @@
             btn_search.FlatStyle = FlatStyle.Flat;
             btn_search.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_search.ForeColor = Color.White;
-            btn_search.Image = Properties.Resources.search__1_;
+            btn_search.Image = (Image)resources.GetObject("btn_search.Image");
             btn_search.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_search.Location = new Point(528, 10);
+            btn_search.Location = new Point(528, 12);
             btn_search.Name = "btn_search";
-            btn_search.Size = new Size(123, 29);
+            btn_search.Size = new Size(111, 27);
             btn_search.TabIndex = 17;
-            btn_search.Text = "Tìm kiếm";
+            btn_search.Text = "Load";
             btn_search.UseVisualStyleBackColor = false;
+            btn_search.Click += btn_search_Click;
             // 
             // lbl_hienthisoluongnv
             // 
@@ -398,12 +424,14 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1290, 740);
+            BackColor = SystemColors.Control;
+            ClientSize = new Size(1290, 900);
             Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form_QL_Nhanvien";
             Text = "Form_QL_Nhanvien";
+            Load += Form_QL_Nhanvien_Load;
             panel1.ResumeLayout(false);
             grB_chucnag.ResumeLayout(false);
             grb_thongtinsp.ResumeLayout(false);
@@ -441,11 +469,14 @@
         private TextBox txt_ngaythue;
         private Label label7;
         private GroupBox grB_chucnag;
-        private Button btn_xoa;
         private Button btn_sua;
         private Button btn_them;
         private CheckBox chkIsAdmin;
         private Label label1;
         private Button btn_search;
+        private Label label9;
+        private Label label8;
+        private ComboBox cmbThuongHieu;
+        private ComboBox cmbDanhMuc;
     }
 }

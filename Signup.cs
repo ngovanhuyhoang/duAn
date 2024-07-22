@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Dal_da1.Context;
+using Dal_da1.DomainClass;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -38,6 +40,44 @@ namespace DA1_formLogin
             login.Show();
             this.Hide();
 
+        }
+
+        private void btn_signup_Click(object sender, EventArgs e)
+        {
+            string email = txt_signup_email.Text;
+            string username = txtUsername_Signup.Text;
+            string password = txt_password_signup.Text;
+            string chucVu = cboChucVu.SelectedItem.ToString();
+
+            if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+            {
+                MessageBox.Show("Hãy điền đủ các trường thông tin.");
+                return;
+            }
+
+            using (var context = new MyContext())
+            {
+                // Kiểm tra xem tên đăng nhập đã tồn tại hay chưa
+                var existingUser = context.NhanViens.FirstOrDefault(nv => nv.Username == username);
+                if (existingUser != null)
+                {
+                    MessageBox.Show("Username đã tồn tại.");
+                    return;
+                    var newUser = new NhanVien
+                    {
+                        //email = email,
+                        Username = username,
+                        Password = password,
+                        TenChucVu = chucVu // Lưu tên chức vụ
+                    };
+
+                    context.NhanViens.Add(newUser);
+                    context.SaveChanges();
+
+                    MessageBox.Show("Tài khoản của bạn đã được tạo thành công!");
+                }
+
+            }
         }
     }
 }

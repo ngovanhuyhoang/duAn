@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_QL_Hanghoa));
             panel1 = new Panel();
             grB_chucnag = new GroupBox();
-            btn_xoa = new Button();
             btn_sua = new Button();
             btn_them = new Button();
             grb_thongtinsp = new GroupBox();
@@ -49,6 +49,7 @@
             lbl_tensp = new Label();
             lbl_masp = new Label();
             panel2 = new Panel();
+            btn_load = new Button();
             lbl_donvisp = new Label();
             lbl_hienthisoluongsp = new Label();
             lbl_soluongsp = new Label();
@@ -75,7 +76,6 @@
             // 
             // grB_chucnag
             // 
-            grB_chucnag.Controls.Add(btn_xoa);
             grB_chucnag.Controls.Add(btn_sua);
             grB_chucnag.Controls.Add(btn_them);
             grB_chucnag.Location = new Point(3, 459);
@@ -84,23 +84,6 @@
             grB_chucnag.TabIndex = 3;
             grB_chucnag.TabStop = false;
             grB_chucnag.Text = "Chức năng";
-            // 
-            // btn_xoa
-            // 
-            btn_xoa.BackColor = Color.FromArgb(224, 55, 73);
-            btn_xoa.Cursor = Cursors.Hand;
-            btn_xoa.FlatAppearance.BorderSize = 0;
-            btn_xoa.FlatStyle = FlatStyle.Flat;
-            btn_xoa.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_xoa.ForeColor = Color.White;
-            btn_xoa.Image = Properties.Resources.delete;
-            btn_xoa.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_xoa.Location = new Point(277, 45);
-            btn_xoa.Name = "btn_xoa";
-            btn_xoa.Size = new Size(120, 48);
-            btn_xoa.TabIndex = 2;
-            btn_xoa.Text = "Xóa";
-            btn_xoa.UseVisualStyleBackColor = false;
             // 
             // btn_sua
             // 
@@ -118,6 +101,7 @@
             btn_sua.TabIndex = 1;
             btn_sua.Text = "Sửa";
             btn_sua.UseVisualStyleBackColor = false;
+            btn_sua.Click += btn_sua_Click;
             // 
             // btn_them
             // 
@@ -135,6 +119,7 @@
             btn_them.TabIndex = 0;
             btn_them.Text = "Thêm";
             btn_them.UseVisualStyleBackColor = false;
+            btn_them.Click += btn_them_Click;
             // 
             // grb_thongtinsp
             // 
@@ -274,6 +259,7 @@
             // panel2
             // 
             panel2.AutoScroll = true;
+            panel2.Controls.Add(btn_load);
             panel2.Controls.Add(lbl_donvisp);
             panel2.Controls.Add(lbl_hienthisoluongsp);
             panel2.Controls.Add(lbl_soluongsp);
@@ -285,6 +271,24 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(779, 747);
             panel2.TabIndex = 2;
+            // 
+            // btn_load
+            // 
+            btn_load.BackColor = Color.FromArgb(7, 167, 233);
+            btn_load.Cursor = Cursors.Hand;
+            btn_load.FlatAppearance.BorderSize = 0;
+            btn_load.FlatStyle = FlatStyle.Flat;
+            btn_load.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_load.ForeColor = Color.White;
+            btn_load.Image = (Image)resources.GetObject("btn_load.Image");
+            btn_load.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_load.Location = new Point(507, 12);
+            btn_load.Name = "btn_load";
+            btn_load.Size = new Size(111, 27);
+            btn_load.TabIndex = 18;
+            btn_load.Text = "Load";
+            btn_load.UseVisualStyleBackColor = false;
+            btn_load.Click += btn_load_Click;
             // 
             // lbl_donvisp
             // 
@@ -321,6 +325,7 @@
             dtg_sanpham.RowHeadersWidth = 51;
             dtg_sanpham.Size = new Size(694, 466);
             dtg_sanpham.TabIndex = 13;
+            dtg_sanpham.CellClick += dtg_sanpham_CellClick;
             // 
             // txt_timkiemsp
             // 
@@ -328,6 +333,7 @@
             txt_timkiemsp.Name = "txt_timkiemsp";
             txt_timkiemsp.Size = new Size(226, 27);
             txt_timkiemsp.TabIndex = 12;
+            txt_timkiemsp.TextChanged += txt_timkiemsp_TextChanged;
             // 
             // lbl_timkiemsp
             // 
@@ -363,7 +369,6 @@
 
         private Panel panel1;
         private GroupBox grB_chucnag;
-        private Button btn_xoa;
         private Button btn_sua;
         private Button btn_them;
         private GroupBox grb_thongtinsp;
@@ -388,5 +393,6 @@
         private Label lbl_hienthisoluongsp;
         private Label lbl_soluongsp;
         private Label lbl_donvisp;
+        private Button btn_load;
     }
 }

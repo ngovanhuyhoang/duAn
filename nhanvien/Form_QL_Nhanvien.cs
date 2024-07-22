@@ -21,7 +21,6 @@ namespace DA1_formLogin
         {
             InitializeComponent();
             dbcontext = new MyContext();
-            LoadData();
             UpdateEmployeeCount();
             InitializeSearch(); // Gọi phương thức khởi tạo sự kiện TextChanged
         }
@@ -35,54 +34,44 @@ namespace DA1_formLogin
         }
         private void btn_them_Click(object sender, EventArgs e)
         {
-            var newNhanVien = new NhanVien
-            {
-                Ten = txt_tennv.Text,
-                TenDangNhap = txt_username.Text,
-                MatKhau = txt_mk.Text,
-                SoDienThoai = txt_sdt.Text,
-                Email = txt_email.Text,
-                DiaChi = txt_diachi.Text,
-                IsAdmin = chkIsAdmin.Checked ? 1 : 0
-            };
+            //var newNhanVien = new NhanVien
+            //{
+            //    Ten = txt_tennv.Text,
+            //    TenDangNhap = txt_username.Text,
+            //    MatKhau = txt_mk.Text,
+            //    SoDienThoai = txt_sdt.Text,
+            //    Email = txt_email.Text,
+            //    DiaChi = txt_diachi.Text,
+            //    IsAdmin = chkIsAdmin.Checked ? 1 : 0
+            //};
 
-            dbcontext.NhanViens.Add(newNhanVien);
-            dbcontext.SaveChanges();
-            LoadData();
+            //dbcontext.NhanViens.Add(newNhanVien);
+            //dbcontext.SaveChanges();
+            //LoadData();
+            //UpdateEmployeeCount();
+            //LoadComboBoxData();
         }
 
         private void btn_sua_Click(object sender, EventArgs e)
         {
-            int selectedId = (int)dtg_nhanvien.SelectedRows[0].Cells["MaNhanVien"].Value;
-            var nhanVien = dbcontext.NhanViens.Find(selectedId);
+            //int selectedId = (int)dtg_nhanvien.SelectedRows[0].Cells["MaNhanVien"].Value;
+            //var nhanVien = dbcontext.NhanViens.Find(selectedId);
 
-            if (nhanVien != null)
-            {
-                nhanVien.Ten = txt_tennv.Text;
-                nhanVien.TenDangNhap = txt_username.Text;
-                nhanVien.MatKhau = txt_mk.Text;
-                nhanVien.SoDienThoai = txt_sdt.Text;
-                nhanVien.Email = txt_email.Text;
-                nhanVien.DiaChi = txt_diachi.Text;
-                nhanVien.IsAdmin = chkIsAdmin.Checked ? 1 : 0;
+            //if (nhanVien != null)
+            //{
+            //    nhanVien.Ten = txt_tennv.Text;
+            //    nhanVien.TenDangNhap = txt_username.Text;
+            //    nhanVien.MatKhau = txt_mk.Text;
+            //    nhanVien.SoDienThoai = txt_sdt.Text;
+            //    nhanVien.Email = txt_email.Text;
+            //    nhanVien.DiaChi = txt_diachi.Text;
+            //    nhanVien.IsAdmin = chkIsAdmin.Checked ? 1 : 0;
 
-                dbcontext.SaveChanges();
-                LoadData();
-            }
+            //    dbcontext.SaveChanges();
+            //    LoadData();
+            //}
         }
 
-        private void btn_xoa_Click(object sender, EventArgs e)
-        {
-            int selectedId = (int)dtg_nhanvien.SelectedRows[0].Cells["MaNhanVien"].Value;
-            var nhanVien = dbcontext.NhanViens.Find(selectedId);
-
-            if (nhanVien != null)
-            {
-                dbcontext.NhanViens.Remove(nhanVien);
-                dbcontext.SaveChanges();
-                LoadData();
-            }
-        }
 
         private void dtg_nhanvien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -92,19 +81,21 @@ namespace DA1_formLogin
             {
                 var row = dtg_nhanvien.Rows[e.RowIndex];
 
-                // Điền dữ liệu vào các TextBox từ hàng được chọn
-                txt_manv.Text = row.Cells["MaNhanVien"].Value.ToString();
-                txt_tennv.Text = row.Cells["Ten"].Value.ToString();
-                txt_username.Text = row.Cells["TenDangNhap"].Value.ToString();
-                txt_mk.Text = row.Cells["MatKhau"].Value.ToString();
-                txt_sdt.Text = row.Cells["SoDienThoai"].Value.ToString();
-                txt_email.Text = row.Cells["Email"].Value.ToString();
-                txt_diachi.Text = row.Cells["DiaChi"].Value.ToString();
+                // Điền dữ liệu vào các TextBox từ hàng được chọn, nếu giá trị null thì gán chuỗi rỗng
+                txt_manv.Text = row.Cells["MaNhanVien"].Value?.ToString() ?? string.Empty;
+                txt_tennv.Text = row.Cells["Ten"].Value?.ToString() ?? string.Empty;
+                //txt.Text = row.Cells["VaiTro"].Value?.ToString() ?? string.Empty; // Thêm trường VaiTro vào form của bạn
+                txt_username.Text = row.Cells["TenDangNhap"].Value?.ToString() ?? string.Empty;
+                txt_mk.Text = row.Cells["MatKhau"].Value?.ToString() ?? string.Empty;
+                txt_sdt.Text = row.Cells["SoDienThoai"].Value?.ToString() ?? string.Empty;
+                txt_email.Text = row.Cells["Email"].Value?.ToString() ?? string.Empty;
+                txt_diachi.Text = row.Cells["DiaChi"].Value?.ToString() ?? string.Empty;
 
                 // Thiết lập trạng thái cho CheckBox
-                int isAdminValue = (int)row.Cells["isAdmin"].Value;
+                int isAdminValue = row.Cells["IsAdmin"].Value != null ? (int)row.Cells["IsAdmin"].Value : 0;
                 chkIsAdmin.Checked = (isAdminValue == 1);
-                txt_ngaythue.Text = ((DateTime)row.Cells["NgayThue"].Value).ToString("yyyy-MM-dd");
+
+                txt_ngaythue.Text = row.Cells["NgayThue"].Value != null ? ((DateTime)row.Cells["NgayThue"].Value).ToString("yyyy-MM-dd") : string.Empty;
             }
         }
         private void UpdateEmployeeCount()
@@ -115,20 +106,68 @@ namespace DA1_formLogin
 
         private void txt_timkiemnv_TextChanged(object sender, EventArgs e)
         {
-            string searchTerm = txt_timkiemnv.Text.ToLower();
+            //string searchTerm = txt_timkiemnv.Text.ToLower();
 
-            // Kiểm tra nếu searchTerm là số thì chuyển đổi sang int
-            bool isNumeric = int.TryParse(searchTerm, out int maNhanVien);
+            //// Kiểm tra nếu searchTerm là số thì chuyển đổi sang int
+            //bool isNumeric = int.TryParse(searchTerm, out int maNhanVien);
 
-            var searchResults = dbcontext.NhanViens
-                .Where(nv => (isNumeric && nv.MaNhanVien == maNhanVien) ||
-                             nv.Ten.ToLower().Contains(searchTerm) ||
-                             nv.VaiTro.ToLower().Contains(searchTerm) ||
-                             nv.TenDangNhap.ToLower().Contains(searchTerm))
-                .ToList();
+            //var searchResults = dbcontext.NhanViens
+            //    .Where(nv => (isNumeric && nv.MaNhanVien == maNhanVien) ||
+            //                 nv.Ten.ToLower().Contains(searchTerm) ||
+            //                 nv.VaiTro.ToLower().Contains(searchTerm) ||
+            //                 nv.TenDangNhap.ToLower().Contains(searchTerm))
+            //    .ToList();
 
-            dtg_nhanvien.DataSource = searchResults;
-           
+            //dtg_nhanvien.DataSource = searchResults;
+            //SearchData();
+
+        }
+
+        private void btn_search_Click(object sender, EventArgs e)
+        {
+            LoadData();
+            UpdateEmployeeCount();
+        }
+
+        private void Form_QL_Nhanvien_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void LoadComboBoxData()
+        {
+            //var danhMucList = dbcontext.NhanViens.Select(nv => nv.VaiTro).Distinct().ToList();
+            //cmbDanhMuc.DataSource = danhMucList;
+            //cmbDanhMuc.DisplayMember = "VaiTro"; // Tên cột bạn muốn hiển thị
+            //cmbDanhMuc.SelectedIndex = -1; // Không chọn mục nào khi khởi tạo
+
+            //var thuongHieuList = dbcontext.NhanViens.Select(nv => nv.TenDangNhap).Distinct().ToList();
+            //cmbThuongHieu.DataSource = thuongHieuList;
+            //cmbThuongHieu.DisplayMember = "TenDangNhap"; // Tên cột bạn muốn hiển thị
+            //cmbThuongHieu.SelectedIndex = -1; // Không chọn mục nào khi khởi tạo
+        }
+        private void SearchData()
+        {
+            //string searchTerm = txt_timkiemnv.Text.ToLower();
+            //string selectedDanhMuc = cmbDanhMuc.SelectedItem != null ? cmbDanhMuc.SelectedItem.ToString() : string.Empty;
+            //string selectedThuongHieu = cmbThuongHieu.SelectedItem != null ? cmbThuongHieu.SelectedItem.ToString() : string.Empty;
+
+            //var searchResults = dbcontext.NhanViens
+            //    .Where(nv => (string.IsNullOrEmpty(searchTerm) || nv.Ten.ToLower().Contains(searchTerm)) &&
+            //                 (string.IsNullOrEmpty(selectedDanhMuc) || nv.VaiTro.Equals(selectedDanhMuc)) &&
+            //                 (string.IsNullOrEmpty(selectedThuongHieu) || nv.TenDangNhap.Equals(selectedThuongHieu)))
+            //    .ToList();
+
+            //dtg_nhanvien.DataSource = searchResults;
+        }
+
+        private void cmbDanhMuc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SearchData();
+        }
+
+        private void cmbThuongHieu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SearchData();
         }
     }
 }

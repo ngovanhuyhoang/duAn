@@ -11,14 +11,16 @@ using System.Windows.Forms;
 namespace DA1_formLogin
 {
     public partial class Mainform : Form
-    {   
+    {
         public bool isExit = true;
         public event EventHandler Logout;
+        private string userRole; // Lưu tên chức vụ
 
 
-        public Mainform()
+        public Mainform(bool isAdmin)
         {
             InitializeComponent();
+            this.userRole = isAdmin ? "admin" : "user"; // Gán quyền của người dùng
         }
         private Form formchild_hientai;
         private void openChildForm(Form childForm)
@@ -36,6 +38,7 @@ namespace DA1_formLogin
             childForm.BringToFront();
             childForm.Show();
 
+
         }
 
         private void btn_sell_Click(object sender, EventArgs e)
@@ -50,7 +53,14 @@ namespace DA1_formLogin
 
         private void btn_nhanvien_Click(object sender, EventArgs e)
         {
-            openChildForm(new Form_QL_Nhanvien());
+            if (userRole == "admin")
+            {
+                openChildForm(new Form_QL_Nhanvien());
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền truy cập vào chức năng này.");
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
