@@ -39,9 +39,9 @@ namespace DA1_formLogin
 
         private void btn_registerhere_Click(object sender, EventArgs e)
         {
-            Signup signup = new Signup();
-            signup.Show();
-            this.Hide();
+            //Signup signup = new Signup();
+            //signup.Show();
+            //this.Hide();
 
         }
 
@@ -58,7 +58,8 @@ namespace DA1_formLogin
 
                 if (user != null)
                 {
-                    bool isAdmin = user.TenChucVu == "Admin"; // Kiểm tra quyền của người dùng
+                    bool isAdmin = user.TenChucVu.ToLower() == "admin";
+                     // Kiểm tra quyền của người dùng
 
                     Mainform mainform = new Mainform(isAdmin);
                     mainform.Show();

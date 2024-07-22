@@ -39,21 +39,17 @@ namespace DA1_formLogin
 
         private void btn_them_Click(object sender, EventArgs e)
         {
-            //var newSanPham = new SanPham
-            //{
-            //    Ten = txt_tensp.Text,
-            //    DanhMuc = txt_danhmuc.Text,
-            //    ThuongHieu = txt_thuonghieu.Text,
-            //    MaNhaCungCap = int.Parse(txt_macungcap.Text),
-            //    Gia = decimal.Parse(txt_gia.Text),
-            //    TonKho = int.Parse(txt_tonkho.Text),
-            //    //MaVach = txt_mavach.Text
-            //};
+            var newSanPham = new SanPham
+            {
+                MaSanPham = txt_masp.Text,
+                TenSanPham = txt_tensp.Text,
 
-            //dbcontext.SanPhams.Add(newSanPham);
-            //dbcontext.SaveChanges();
-            //LoadData();
-            //UpdateProductCount();
+            };
+
+            dbcontext.SanPhams.Add(newSanPham);
+            dbcontext.SaveChanges();
+            LoadData();
+            UpdateProductCount();
         }
 
         private void btn_sua_Click(object sender, EventArgs e)
