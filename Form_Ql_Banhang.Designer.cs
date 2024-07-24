@@ -36,7 +36,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1115, 611);
             Name = "Form_Ql_Banhang";
-            Text = "Form_Ql_Banhang";
             ResumeLayout(false);
         }
 

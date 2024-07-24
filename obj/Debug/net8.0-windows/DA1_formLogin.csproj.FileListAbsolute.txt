@@ -71,3 +71,4 @@ C:\Users\LENOVO\source\repos\DA1_formlogin\bin\Debug\net8.0-windows\runtimes\win
 C:\Users\LENOVO\source\repos\DA1_formlogin\bin\Debug\net8.0-windows\Dal_da1.dll
 C:\Users\LENOVO\source\repos\DA1_formlogin\bin\Debug\net8.0-windows\Dal_da1.pdb
 C:\Users\LENOVO\source\repos\DA1_formlogin\obj\Debug\net8.0-windows\DA1_form.3BB1572A.Up2Date
+C:\Users\LENOVO\source\repos\DA1_formlogin\obj\Debug\net8.0-windows\DA1_formLogin.Form_ChiTietSanPham.resources
