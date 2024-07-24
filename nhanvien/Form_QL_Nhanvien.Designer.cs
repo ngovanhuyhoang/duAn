@@ -34,12 +34,12 @@
             btn_sua = new Button();
             btn_them = new Button();
             grb_thongtinsp = new GroupBox();
+            cmb_role = new ComboBox();
             chkDaThoiViec = new CheckBox();
             txt_ngaythue = new TextBox();
             label7 = new Label();
             txt_diachi = new TextBox();
             label5 = new Label();
-            txt_role = new TextBox();
             txt_ngaysinh = new Label();
             label1 = new Label();
             txt_sdt = new TextBox();
@@ -129,12 +129,12 @@
             // 
             // grb_thongtinsp
             // 
+            grb_thongtinsp.Controls.Add(cmb_role);
             grb_thongtinsp.Controls.Add(chkDaThoiViec);
             grb_thongtinsp.Controls.Add(txt_ngaythue);
             grb_thongtinsp.Controls.Add(label7);
             grb_thongtinsp.Controls.Add(txt_diachi);
             grb_thongtinsp.Controls.Add(label5);
-            grb_thongtinsp.Controls.Add(txt_role);
             grb_thongtinsp.Controls.Add(txt_ngaysinh);
             grb_thongtinsp.Controls.Add(label1);
             grb_thongtinsp.Controls.Add(txt_sdt);
@@ -153,6 +153,15 @@
             grb_thongtinsp.TabIndex = 2;
             grb_thongtinsp.TabStop = false;
             grb_thongtinsp.Text = "Thông tin nhân viên";
+            // 
+            // cmb_role
+            // 
+            cmb_role.FormattingEnabled = true;
+            cmb_role.Location = new Point(144, 364);
+            cmb_role.Name = "cmb_role";
+            cmb_role.Size = new Size(235, 28);
+            cmb_role.TabIndex = 20;
+            cmb_role.SelectedIndexChanged += cmb_role_SelectedIndexChanged;
             // 
             // chkDaThoiViec
             // 
@@ -196,13 +205,6 @@
             label5.Size = new Size(58, 20);
             label5.TabIndex = 14;
             label5.Text = "Địa chỉ:";
-            // 
-            // txt_role
-            // 
-            txt_role.Location = new Point(144, 369);
-            txt_role.Name = "txt_role";
-            txt_role.Size = new Size(235, 27);
-            txt_role.TabIndex = 13;
             // 
             // txt_ngaysinh
             // 
@@ -386,9 +388,13 @@
             // 
             // dtg_nhanvien
             // 
+            dtg_nhanvien.BackgroundColor = Color.WhiteSmoke;
+            dtg_nhanvien.BorderStyle = BorderStyle.Fixed3D;
             dtg_nhanvien.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtg_nhanvien.EditMode = DataGridViewEditMode.EditOnF2;
             dtg_nhanvien.Location = new Point(6, 62);
             dtg_nhanvien.Name = "dtg_nhanvien";
+            dtg_nhanvien.ReadOnly = true;
             dtg_nhanvien.RowHeadersWidth = 51;
             dtg_nhanvien.Size = new Size(694, 466);
             dtg_nhanvien.TabIndex = 13;
@@ -439,7 +445,6 @@
         private GroupBox grb_thongtinsp;
         private TextBox txt_diachi;
         private Label label5;
-        private TextBox txt_role;
         private Label txt_ngaysinh;
         private TextBox txt_sdt;
         private Label label2;
@@ -468,5 +473,6 @@
         private Label label6;
         private ComboBox cmbChucVu;
         private CheckBox chkDaThoiViec2;
+        private ComboBox cmb_role;
     }
 }

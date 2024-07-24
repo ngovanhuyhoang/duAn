@@ -62,9 +62,8 @@ namespace DA1_formLogin
                 Password = txt_mk.Text,
                 Sdt = txt_sdt.Text,
                 DiaChi = txt_diachi.Text,
-                TenChucVu = txt_role.Text,
+                TenChucVu = cmb_role.SelectedItem.ToString(),
                 DaThoiViec = chkDaThoiViec.Checked
-
             };
 
             dbcontext.NhanViens.Add(newNhanVien);
@@ -85,7 +84,7 @@ namespace DA1_formLogin
                 nhanVien.Password = txt_mk.Text;
                 nhanVien.Sdt = txt_sdt.Text;
                 nhanVien.DiaChi = txt_diachi.Text;
-                nhanVien.TenChucVu = txt_role.Text;
+                nhanVien.TenChucVu = cmb_role.SelectedItem.ToString();
                 nhanVien.DaThoiViec = chkDaThoiViec.Checked;
                 dbcontext.SaveChanges();
                 LoadData();
@@ -93,24 +92,7 @@ namespace DA1_formLogin
         }
 
 
-        private void dtg_nhanvien_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                var row = dtg_nhanvien.Rows[e.RowIndex];
 
-                // Ensure column names are correct
-                txt_manv.Text = row.Cells["MaNhanVien"].Value?.ToString() ?? string.Empty;
-                txt_tennv.Text = row.Cells["TenNhanVien"].Value?.ToString() ?? string.Empty;
-                txt_username.Text = row.Cells["Username"].Value?.ToString() ?? string.Empty;
-                txt_mk.Text = row.Cells["Password"].Value?.ToString() ?? string.Empty;
-                txt_sdt.Text = row.Cells["Sdt"].Value?.ToString() ?? string.Empty;
-                txt_diachi.Text = row.Cells["DiaChi"].Value?.ToString() ?? string.Empty;
-                txt_role.Text = row.Cells["TenChucVu"].Value?.ToString() ?? string.Empty;
-                txt_ngaythue.Text = row.Cells["NgayThue"].Value != null ? ((DateTime)row.Cells["NgayThue"].Value).ToString("yyyy-MM-dd") : string.Empty;
-                chkDaThoiViec.Checked = row.Cells["DaThoiViec"].Value != null && (bool)row.Cells["DaThoiViec"].Value;
-            }
-        }
         private void UpdateEmployeeCount()
         {
             int employeeCount = dbcontext.NhanViens.Count();
@@ -149,6 +131,13 @@ namespace DA1_formLogin
 
         private void Form_QL_Nhanvien_Load(object sender, EventArgs e)
         {
+            List<string> roles = new List<string> {"Admin", "Nhân viên bán hàng", "Nhân viên kho" };
+            cmb_role.DataSource = roles;
+            // Đăng ký sự kiện CellEndEdit
+            dtg_nhanvien.CellEndEdit += Dtg_nhanvien_CellEndEdit;
+
+            // Các phần khác của mã khởi tạo form
+            dtg_nhanvien.EditMode = DataGridViewEditMode.EditOnEnter;
             cmbChucVu.Items.Add("Nhân viên");
             cmbChucVu.Items.Add("Admin");
             cmbChucVu.SelectedIndex = 0; // Chọn mặc định
@@ -156,10 +145,36 @@ namespace DA1_formLogin
 
             chkDaThoiViec2.CheckedChanged += (s, ev) => SearchData();
         }
-        private void LoadComboBoxData()
-        {
 
+        private void Dtg_nhanvien_CellEndEdit(object? sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                var row = dtg_nhanvien.Rows[e.RowIndex];
+
+                txt_manv.Text = row.Cells["MaNhanVien"].Value?.ToString() ?? string.Empty;
+                txt_tennv.Text = row.Cells["TenNhanVien"].Value?.ToString() ?? string.Empty;
+                txt_username.Text = row.Cells["Username"].Value?.ToString() ?? string.Empty;
+                txt_mk.Text = row.Cells["Password"].Value?.ToString() ?? string.Empty;
+                txt_sdt.Text = row.Cells["Sdt"].Value?.ToString() ?? string.Empty;
+                txt_diachi.Text = row.Cells["DiaChi"].Value?.ToString() ?? string.Empty;
+
+                // Đặt giá trị cho ComboBox hoặc không chọn mục nào nếu giá trị không tồn tại
+                var role = row.Cells["TenChucVu"].Value?.ToString();
+                if (!string.IsNullOrEmpty(role) && cmb_role.Items.Contains(role))
+                {
+                    cmb_role.SelectedItem = role;
+                }
+                else
+                {
+                    cmb_role.SelectedIndex = -1;
+                }
+
+                txt_ngaythue.Text = row.Cells["NgayThue"].Value != null ? ((DateTime)row.Cells["NgayThue"].Value).ToString("yyyy-MM-dd") : string.Empty;
+                chkDaThoiViec.Checked = row.Cells["DaThoiViec"].Value != null && (bool)row.Cells["DaThoiViec"].Value;
+            }
         }
+
         private void SearchData()
         {
             bool daThoiViec = chkDaThoiViec2.Checked;
@@ -195,6 +210,30 @@ namespace DA1_formLogin
         private void chkDaThoiViec2_CheckedChanged(object sender, EventArgs e)
         {
             SearchData();
+        }
+
+
+        private void dtg_nhanvien_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                var row = dtg_nhanvien.Rows[e.RowIndex];
+
+                txt_manv.Text = row.Cells["MaNhanVien"].Value?.ToString() ?? string.Empty;
+                txt_tennv.Text = row.Cells["TenNhanVien"].Value?.ToString() ?? string.Empty;
+                txt_username.Text = row.Cells["Username"].Value?.ToString() ?? string.Empty;
+                txt_mk.Text = row.Cells["Password"].Value?.ToString() ?? string.Empty;
+                txt_sdt.Text = row.Cells["Sdt"].Value?.ToString() ?? string.Empty;
+                txt_diachi.Text = row.Cells["DiaChi"].Value?.ToString() ?? string.Empty;
+                cmb_role.SelectedItem = row.Cells["TenChucVu"].Value?.ToString() ?? string.Empty;
+                txt_ngaythue.Text = row.Cells["NgayThue"].Value != null ? ((DateTime)row.Cells["NgayThue"].Value).ToString("yyyy-MM-dd") : string.Empty;
+                chkDaThoiViec.Checked = row.Cells["DaThoiViec"].Value != null && (bool)row.Cells["DaThoiViec"].Value;
+            }
+        }
+
+        private void cmb_role_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
