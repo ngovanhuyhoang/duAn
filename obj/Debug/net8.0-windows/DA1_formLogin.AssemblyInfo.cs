@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DA1_formLogin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96eea5a35a25008357517a6b308e419279d631aa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7807c5f5a5fbfd22babc254d518eb3cdd3d78088")]
 [assembly: System.Reflection.AssemblyProductAttribute("DA1_formLogin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DA1_formLogin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

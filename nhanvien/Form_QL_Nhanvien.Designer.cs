@@ -101,7 +101,7 @@
             btn_sua.ForeColor = Color.White;
             btn_sua.Image = Properties.Resources.wrench;
             btn_sua.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_sua.Location = new Point(144, 45);
+            btn_sua.Location = new Point(232, 45);
             btn_sua.Name = "btn_sua";
             btn_sua.Size = new Size(120, 48);
             btn_sua.TabIndex = 1;
@@ -119,7 +119,7 @@
             btn_them.ForeColor = Color.White;
             btn_them.Image = Properties.Resources.add;
             btn_them.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_them.Location = new Point(6, 45);
+            btn_them.Location = new Point(42, 45);
             btn_them.Name = "btn_them";
             btn_them.Size = new Size(120, 48);
             btn_them.TabIndex = 0;

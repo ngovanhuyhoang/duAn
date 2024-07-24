@@ -44,6 +44,7 @@
             lbl_tensp = new Label();
             lbl_masp = new Label();
             panel2 = new Panel();
+            chkNgungKinhDoanh = new CheckBox();
             btn_load = new Button();
             lbl_donvisp = new Label();
             lbl_hienthisoluongsp = new Label();
@@ -51,7 +52,6 @@
             dtg_sanpham = new DataGridView();
             txt_timkiemsp = new TextBox();
             lbl_timkiemsp = new Label();
-            chkNgungKinhDoanh = new CheckBox();
             panel1.SuspendLayout();
             grB_chucnag.SuspendLayout();
             grb_thongtinsp.SuspendLayout();
@@ -91,7 +91,7 @@
             btn_luu.ForeColor = Color.White;
             btn_luu.Image = Properties.Resources.add;
             btn_luu.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_luu.Location = new Point(223, 41);
+            btn_luu.Location = new Point(58, 46);
             btn_luu.Name = "btn_luu";
             btn_luu.Size = new Size(120, 48);
             btn_luu.TabIndex = 2;
@@ -109,7 +109,7 @@
             btn_suasp.ForeColor = Color.White;
             btn_suasp.Image = Properties.Resources.wrench;
             btn_suasp.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_suasp.Location = new Point(50, 41);
+            btn_suasp.Location = new Point(228, 46);
             btn_suasp.Name = "btn_suasp";
             btn_suasp.Size = new Size(120, 48);
             btn_suasp.TabIndex = 2;
@@ -226,6 +226,17 @@
             panel2.Size = new Size(779, 747);
             panel2.TabIndex = 2;
             // 
+            // chkNgungKinhDoanh
+            // 
+            chkNgungKinhDoanh.AutoSize = true;
+            chkNgungKinhDoanh.Location = new Point(536, 547);
+            chkNgungKinhDoanh.Name = "chkNgungKinhDoanh";
+            chkNgungKinhDoanh.Size = new Size(154, 24);
+            chkNgungKinhDoanh.TabIndex = 19;
+            chkNgungKinhDoanh.Text = "Ngừng kinh doanh";
+            chkNgungKinhDoanh.UseVisualStyleBackColor = true;
+            chkNgungKinhDoanh.CheckedChanged += chkNgungKinhDoanh_CheckedChanged;
+            // 
             // btn_load
             // 
             btn_load.BackColor = Color.FromArgb(7, 167, 233);
@@ -273,6 +284,8 @@
             // 
             // dtg_sanpham
             // 
+            dtg_sanpham.BackgroundColor = Color.WhiteSmoke;
+            dtg_sanpham.BorderStyle = BorderStyle.Fixed3D;
             dtg_sanpham.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtg_sanpham.Location = new Point(6, 62);
             dtg_sanpham.Name = "dtg_sanpham";
@@ -298,17 +311,6 @@
             lbl_timkiemsp.Size = new Size(205, 20);
             lbl_timkiemsp.TabIndex = 11;
             lbl_timkiemsp.Text = "Nhập sản phẩm cần tìm kiếm:";
-            // 
-            // chkNgungKinhDoanh
-            // 
-            chkNgungKinhDoanh.AutoSize = true;
-            chkNgungKinhDoanh.Location = new Point(536, 547);
-            chkNgungKinhDoanh.Name = "chkNgungKinhDoanh";
-            chkNgungKinhDoanh.Size = new Size(154, 24);
-            chkNgungKinhDoanh.TabIndex = 19;
-            chkNgungKinhDoanh.Text = "Ngừng kinh doanh";
-            chkNgungKinhDoanh.UseVisualStyleBackColor = true;
-            chkNgungKinhDoanh.CheckedChanged += chkNgungKinhDoanh_CheckedChanged;
             // 
             // Form_QL_Hanghoa
             // 
