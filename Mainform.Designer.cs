@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mainform));
             panel1 = new Panel();
+            btn_NhapHang = new Button();
+            btn_NhaCungCap = new Button();
+            btn_KhachHang = new Button();
+            btn_BaoCao = new Button();
             btn_dangxuat = new Button();
             btn_nhanvien = new Button();
             btn_hanghoa = new Button();
@@ -43,6 +47,10 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(35, 168, 242);
+            panel1.Controls.Add(btn_NhapHang);
+            panel1.Controls.Add(btn_NhaCungCap);
+            panel1.Controls.Add(btn_KhachHang);
+            panel1.Controls.Add(btn_BaoCao);
             panel1.Controls.Add(btn_dangxuat);
             panel1.Controls.Add(btn_nhanvien);
             panel1.Controls.Add(btn_hanghoa);
@@ -51,8 +59,76 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(250, 701);
+            panel1.Size = new Size(250, 782);
             panel1.TabIndex = 0;
+            // 
+            // btn_NhapHang
+            // 
+            btn_NhapHang.Cursor = Cursors.Hand;
+            btn_NhapHang.FlatAppearance.BorderSize = 0;
+            btn_NhapHang.FlatStyle = FlatStyle.Flat;
+            btn_NhapHang.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_NhapHang.ForeColor = Color.White;
+            btn_NhapHang.Image = (Image)resources.GetObject("btn_NhapHang.Image");
+            btn_NhapHang.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_NhapHang.Location = new Point(0, 619);
+            btn_NhapHang.Name = "btn_NhapHang";
+            btn_NhapHang.Size = new Size(250, 76);
+            btn_NhapHang.TabIndex = 8;
+            btn_NhapHang.Text = "Nhập Hàng";
+            btn_NhapHang.UseVisualStyleBackColor = true;
+            btn_NhapHang.Click += btn_NhapHang_Click;
+            // 
+            // btn_NhaCungCap
+            // 
+            btn_NhaCungCap.Cursor = Cursors.Hand;
+            btn_NhaCungCap.FlatAppearance.BorderSize = 0;
+            btn_NhaCungCap.FlatStyle = FlatStyle.Flat;
+            btn_NhaCungCap.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_NhaCungCap.ForeColor = Color.White;
+            btn_NhaCungCap.Image = (Image)resources.GetObject("btn_NhaCungCap.Image");
+            btn_NhaCungCap.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_NhaCungCap.Location = new Point(0, 537);
+            btn_NhaCungCap.Name = "btn_NhaCungCap";
+            btn_NhaCungCap.Size = new Size(250, 76);
+            btn_NhaCungCap.TabIndex = 7;
+            btn_NhaCungCap.Text = "Nhà Cung Cấp";
+            btn_NhaCungCap.UseVisualStyleBackColor = true;
+            btn_NhaCungCap.Click += btn_NhaCungCap_Click;
+            // 
+            // btn_KhachHang
+            // 
+            btn_KhachHang.Cursor = Cursors.Hand;
+            btn_KhachHang.FlatAppearance.BorderSize = 0;
+            btn_KhachHang.FlatStyle = FlatStyle.Flat;
+            btn_KhachHang.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_KhachHang.ForeColor = Color.White;
+            btn_KhachHang.Image = (Image)resources.GetObject("btn_KhachHang.Image");
+            btn_KhachHang.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_KhachHang.Location = new Point(0, 455);
+            btn_KhachHang.Name = "btn_KhachHang";
+            btn_KhachHang.Size = new Size(250, 76);
+            btn_KhachHang.TabIndex = 6;
+            btn_KhachHang.Text = "Khách Hàng";
+            btn_KhachHang.UseVisualStyleBackColor = true;
+            btn_KhachHang.Click += btn_KhachHang_Click;
+            // 
+            // btn_BaoCao
+            // 
+            btn_BaoCao.Cursor = Cursors.Hand;
+            btn_BaoCao.FlatAppearance.BorderSize = 0;
+            btn_BaoCao.FlatStyle = FlatStyle.Flat;
+            btn_BaoCao.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_BaoCao.ForeColor = Color.White;
+            btn_BaoCao.Image = (Image)resources.GetObject("btn_BaoCao.Image");
+            btn_BaoCao.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_BaoCao.Location = new Point(0, 373);
+            btn_BaoCao.Name = "btn_BaoCao";
+            btn_BaoCao.Size = new Size(250, 76);
+            btn_BaoCao.TabIndex = 5;
+            btn_BaoCao.Text = "Báo Cáo";
+            btn_BaoCao.UseVisualStyleBackColor = true;
+            btn_BaoCao.Click += btn_BaoCao_Click;
             // 
             // btn_dangxuat
             // 
@@ -63,7 +139,7 @@
             btn_dangxuat.ForeColor = Color.White;
             btn_dangxuat.Image = (Image)resources.GetObject("btn_dangxuat.Image");
             btn_dangxuat.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_dangxuat.Location = new Point(0, 625);
+            btn_dangxuat.Location = new Point(0, 706);
             btn_dangxuat.Name = "btn_dangxuat";
             btn_dangxuat.Size = new Size(250, 76);
             btn_dangxuat.TabIndex = 4;
@@ -139,7 +215,7 @@
             panel_body.Dock = DockStyle.Fill;
             panel_body.Location = new Point(250, 0);
             panel_body.Name = "panel_body";
-            panel_body.Size = new Size(1161, 701);
+            panel_body.Size = new Size(1161, 782);
             panel_body.TabIndex = 1;
             // 
             // Mainform
@@ -147,7 +223,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
-            ClientSize = new Size(1411, 701);
+            ClientSize = new Size(1411, 782);
             Controls.Add(panel_body);
             Controls.Add(panel1);
             Name = "Mainform";
@@ -169,5 +245,9 @@
         private Button btn_hanghoa;
         private Panel panel_body;
         private Button btn_dangxuat;
+        private Button btn_NhapHang;
+        private Button btn_NhaCungCap;
+        private Button btn_KhachHang;
+        private Button btn_BaoCao;
     }
 }

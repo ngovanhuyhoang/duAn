@@ -90,5 +90,25 @@ namespace DA1_formLogin
         {
             Logout(this, new EventArgs());
         }
+
+        private void btn_BaoCao_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Form_BaoCaoThongKe());
+        }
+
+        private void btn_KhachHang_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Form_QL_KhachHang());
+        }
+
+        private void btn_NhaCungCap_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Form_QL_NhaCungCap());
+        }
+
+        private void btn_NhapHang_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Form_QL_NhapHang());
+        }
     }
 }

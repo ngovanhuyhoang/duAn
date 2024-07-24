@@ -1,57 +1,73 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\",
+  "WorkspaceRootPath": "C:\\Users\\LENOVO\\source\\repos\\duAn\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\form_ql_hanghoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|solutionrelative:form_ql_hanghoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|c:\\users\\lenovo\\source\\repos\\duan\\form_ql_nhaphang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|solutionrelative:form_ql_nhaphang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\nhanvien\\form_ql_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|solutionrelative:nhanvien\\form_ql_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|c:\\users\\lenovo\\source\\repos\\duan\\form_ql_nhacungcap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|solutionrelative:form_ql_nhacungcap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|c:\\users\\lenovo\\source\\repos\\da1_formlogin\\nhanvien\\form_ql_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|solutionrelative:nhanvien\\form_ql_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|c:\\users\\lenovo\\source\\repos\\duan\\form_ql_khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|solutionrelative:form_ql_khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|c:\\users\\lenovo\\source\\repos\\da1_formlogin\\form_ql_hanghoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|solutionrelative:form_ql_hanghoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\form_ql_banhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|solutionrelative:form_ql_banhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\form_chitietsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|solutionrelative:form_chitietsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|c:\\users\\lenovo\\source\\repos\\da1_formlogin\\form_chitietsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|solutionrelative:form_chitietsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|c:\\users\\lenovo\\source\\repos\\da1_formlogin\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|c:\\users\\lenovo\\source\\repos\\duan\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|c:\\users\\lenovo\\source\\repos\\duan\\form_baocaothongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|solutionrelative:form_baocaothongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|C:\\Users\\LENOVO\\source\\repos\\duAn\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|c:\\users\\lenovo\\source\\repos\\da1_formlogin\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|solutionrelative:signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|c:\\users\\lenovo\\source\\repos\\duan\\nhanvien\\form_ql_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|solutionrelative:nhanvien\\form_ql_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|c:\\users\\lenovo\\source\\repos\\da1_formlogin\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|C:\\Users\\LENOVO\\source\\repos\\duAn\\nhanvien\\form_ql_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|solutionrelative:nhanvien\\form_ql_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|c:\\users\\lenovo\\source\\repos\\duan\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|c:\\users\\lenovo\\source\\repos\\duan\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|solutionrelative:signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|C:\\Users\\LENOVO\\source\\repos\\duAn\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|C:\\Users\\LENOVO\\source\\repos\\duAn\\form_ql_banhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|solutionrelative:form_ql_banhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|c:\\users\\lenovo\\source\\repos\\duan\\form_ql_hanghoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|solutionrelative:form_ql_hanghoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|C:\\Users\\LENOVO\\source\\repos\\duAn\\form_ql_hanghoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|solutionrelative:form_ql_hanghoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|C:\\Users\\LENOVO\\source\\repos\\duAn\\form_chitietsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|solutionrelative:form_chitietsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|c:\\users\\lenovo\\source\\repos\\duan\\form_chitietsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|solutionrelative:form_chitietsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|C:\\Users\\LENOVO\\source\\repos\\duAn\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A4BED5D5-14E8-4F9B-90CC-B86CB6518F13}|DA1_formLogin.csproj|solutionrelative:signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -71,58 +87,104 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{F591CA0A-406B-4526-9E97-F5B364978A4D}|..\\Dal_da1\\Dal_da1.csproj|c:\\users\\lenovo\\source\\repos\\dal_da1\\domainclass\\chitiethoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F591CA0A-406B-4526-9E97-F5B364978A4D}|..\\Dal_da1\\Dal_da1.csproj|c:\\users\\lenovo\\source\\repos\\dal_da1\\domainclass\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 153,
+      "VerticalTabListWidth": 304,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
+              "Title": "Form_BaoCaoThongKe.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Form_BaoCaoThongKe.cs",
+              "RelativeDocumentMoniker": "Form_BaoCaoThongKe.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Form_BaoCaoThongKe.cs [Design]*",
+              "RelativeToolTip": "Form_BaoCaoThongKe.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T10:00:48.479Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form_QL_NhapHang.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Form_QL_NhapHang.cs",
+              "RelativeDocumentMoniker": "Form_QL_NhapHang.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Form_QL_NhapHang.cs [Design]*",
+              "RelativeToolTip": "Form_QL_NhapHang.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T10:00:23.489Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form_QL_KhachHang.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Form_QL_KhachHang.cs",
+              "RelativeDocumentMoniker": "Form_QL_KhachHang.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Form_QL_KhachHang.cs [Design]*",
+              "RelativeToolTip": "Form_QL_KhachHang.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T09:59:49.04Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form_QL_NhaCungCap.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Form_QL_NhaCungCap.cs",
+              "RelativeDocumentMoniker": "Form_QL_NhaCungCap.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Form_QL_NhaCungCap.cs [Design]*",
+              "RelativeToolTip": "Form_QL_NhaCungCap.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T09:58:30.873Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "Form_ChiTietSanPham.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\Form_ChiTietSanPham.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Form_ChiTietSanPham.cs",
               "RelativeDocumentMoniker": "Form_ChiTietSanPham.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\Form_ChiTietSanPham.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Form_ChiTietSanPham.cs",
               "RelativeToolTip": "Form_ChiTietSanPham.cs",
-              "ViewState": "AQIAAHQAAAAAAAAAAAAAAJcAAAABAAAA",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAiwHEAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-23T17:39:07.579Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "Form_ChiTietSanPham.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\Form_ChiTietSanPham.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Form_ChiTietSanPham.cs",
               "RelativeDocumentMoniker": "Form_ChiTietSanPham.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\Form_ChiTietSanPham.cs [Design]",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Form_ChiTietSanPham.cs [Design]",
               "RelativeToolTip": "Form_ChiTietSanPham.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-23T17:37:03.432Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "Form_Ql_Banhang.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\Form_Ql_Banhang.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Form_Ql_Banhang.cs",
               "RelativeDocumentMoniker": "Form_Ql_Banhang.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\Form_Ql_Banhang.cs [Design]",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Form_Ql_Banhang.cs [Design]",
               "RelativeToolTip": "Form_Ql_Banhang.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T05:32:32.726Z"
+              "WhenOpened": "2024-07-22T05:32:32.726Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "KhachHang.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Dal_da1\\DomainClass\\KhachHang.cs",
               "RelativeDocumentMoniker": "..\\Dal_da1\\DomainClass\\KhachHang.cs",
@@ -134,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "HoaDon.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Dal_da1\\DomainClass\\HoaDon.cs",
               "RelativeDocumentMoniker": "..\\Dal_da1\\DomainClass\\HoaDon.cs",
@@ -146,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "DonDatHang.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Dal_da1\\DomainClass\\DonDatHang.cs",
               "RelativeDocumentMoniker": "..\\Dal_da1\\DomainClass\\DonDatHang.cs",
@@ -158,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "ChiTietHoaDon.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Dal_da1\\DomainClass\\ChiTietHoaDon.cs",
               "RelativeDocumentMoniker": "..\\Dal_da1\\DomainClass\\ChiTietHoaDon.cs",
@@ -170,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "ChiTietDonDatHang.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Dal_da1\\DomainClass\\ChiTietDonDatHang.cs",
               "RelativeDocumentMoniker": "..\\Dal_da1\\DomainClass\\ChiTietDonDatHang.cs",
@@ -182,32 +244,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "NhanVien.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Dal_da1\\DomainClass\\NhanVien.cs",
-              "RelativeDocumentMoniker": "..\\Dal_da1\\DomainClass\\NhanVien.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Dal_da1\\DomainClass\\NhanVien.cs",
-              "RelativeToolTip": "..\\Dal_da1\\DomainClass\\NhanVien.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAYwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T18:24:25.727Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Form_QL_Nhanvien.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\nhanvien\\Form_QL_Nhanvien.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\duAn\\nhanvien\\Form_QL_Nhanvien.cs",
               "RelativeDocumentMoniker": "nhanvien\\Form_QL_Nhanvien.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\nhanvien\\Form_QL_Nhanvien.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\duAn\\nhanvien\\Form_QL_Nhanvien.cs",
               "RelativeToolTip": "nhanvien\\Form_QL_Nhanvien.cs",
-              "ViewState": "AQIAAMIAAAAAAAAAAAAUwOYAAAANAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAnwFMAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-15T15:38:59.635Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "MyContext.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Dal_da1\\Context\\MyContext.cs",
               "RelativeDocumentMoniker": "..\\Dal_da1\\Context\\MyContext.cs",
@@ -219,24 +269,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "Form_QL_Hanghoa.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\Form_QL_Hanghoa.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Form_QL_Hanghoa.cs",
               "RelativeDocumentMoniker": "Form_QL_Hanghoa.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\Form_QL_Hanghoa.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Form_QL_Hanghoa.cs",
               "RelativeToolTip": "Form_QL_Hanghoa.cs",
-              "ViewState": "AQIAALkAAAAAAAAAAAAewN0AAAAbAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAE8AAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-12T16:51:11.167Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Form_QL_Nhanvien.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\nhanvien\\Form_QL_Nhanvien.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\duAn\\nhanvien\\Form_QL_Nhanvien.cs",
               "RelativeDocumentMoniker": "nhanvien\\Form_QL_Nhanvien.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\nhanvien\\Form_QL_Nhanvien.cs [Design]",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\duAn\\nhanvien\\Form_QL_Nhanvien.cs [Design]",
               "RelativeToolTip": "nhanvien\\Form_QL_Nhanvien.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-11T16:45:30.741Z",
@@ -244,85 +294,89 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Login.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\Login.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\Login.cs [Design]",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Login.cs [Design]",
               "RelativeToolTip": "Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T14:26:19.954Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form_QL_Hanghoa.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\Form_QL_Hanghoa.cs",
-              "RelativeDocumentMoniker": "Form_QL_Hanghoa.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\Form_QL_Hanghoa.cs [Design]",
-              "RelativeToolTip": "Form_QL_Hanghoa.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T16:45:00.18Z",
+              "WhenOpened": "2024-07-10T14:26:19.954Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
+              "Title": "Form_QL_Hanghoa.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Form_QL_Hanghoa.cs",
+              "RelativeDocumentMoniker": "Form_QL_Hanghoa.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Form_QL_Hanghoa.cs [Design]",
+              "RelativeToolTip": "Form_QL_Hanghoa.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T16:45:00.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Mainform.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\Mainform.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Mainform.cs",
               "RelativeDocumentMoniker": "Mainform.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\Mainform.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Mainform.cs",
               "RelativeToolTip": "Mainform.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAwBkAAAAyAAAA",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAcwG4AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-11T15:56:23.03Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "Signup.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\Signup.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Signup.cs",
               "RelativeDocumentMoniker": "Signup.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\Signup.cs [Design]",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Signup.cs [Design]",
               "RelativeToolTip": "Signup.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T05:13:30.401Z"
+              "WhenOpened": "2024-07-10T05:13:30.401Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Mainform.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Mainform.cs",
+              "RelativeDocumentMoniker": "Mainform.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Mainform.cs [Design]",
+              "RelativeToolTip": "Mainform.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T15:26:03.013Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Login.cs",
+              "RelativeToolTip": "Login.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAswC0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T14:40:39.179Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Mainform.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\Mainform.cs",
-              "RelativeDocumentMoniker": "Mainform.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\Mainform.cs [Design]",
-              "RelativeToolTip": "Mainform.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T15:26:03.013Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\Login.cs",
-              "RelativeDocumentMoniker": "Login.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\Login.cs",
-              "RelativeToolTip": "Login.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAswC0AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T14:40:39.179Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "Signup.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\Signup.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Signup.cs",
               "RelativeDocumentMoniker": "Signup.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\DA1_formlogin\\Signup.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\duAn\\Signup.cs",
               "RelativeToolTip": "Signup.cs",
               "ViewState": "AQIAACIAAAAAAAAAAAAkwEUAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T05:39:01.095Z"
+              "WhenOpened": "2024-07-10T05:39:01.095Z",
+              "EditorCaption": ""
             }
           ]
         }

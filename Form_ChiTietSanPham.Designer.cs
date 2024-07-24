@@ -29,7 +29,13 @@
         private void InitializeComponent()
         {
             grb_thongtinsp = new GroupBox();
-            txt_km = new TextBox();
+            cbb_km1 = new ComboBox();
+            cbb_nhacungcap = new ComboBox();
+            cbb_thuonghieu = new ComboBox();
+            cbb_danhmuc = new ComboBox();
+            label4 = new Label();
+            label3 = new Label();
+            label1 = new Label();
             grB_chucnag = new GroupBox();
             btn_sua = new Button();
             btn_them = new Button();
@@ -42,25 +48,19 @@
             txt_maspct = new TextBox();
             lbl_tensp = new Label();
             lbl_masp = new Label();
-            txt_dm = new TextBox();
-            label1 = new Label();
-            txt_th = new TextBox();
-            label3 = new Label();
-            txt_ncc = new TextBox();
-            label4 = new Label();
             grb_thongtinsp.SuspendLayout();
             grB_chucnag.SuspendLayout();
             SuspendLayout();
             // 
             // grb_thongtinsp
             // 
-            grb_thongtinsp.Controls.Add(txt_ncc);
+            grb_thongtinsp.Controls.Add(cbb_km1);
+            grb_thongtinsp.Controls.Add(cbb_nhacungcap);
+            grb_thongtinsp.Controls.Add(cbb_thuonghieu);
+            grb_thongtinsp.Controls.Add(cbb_danhmuc);
             grb_thongtinsp.Controls.Add(label4);
-            grb_thongtinsp.Controls.Add(txt_th);
             grb_thongtinsp.Controls.Add(label3);
-            grb_thongtinsp.Controls.Add(txt_dm);
             grb_thongtinsp.Controls.Add(label1);
-            grb_thongtinsp.Controls.Add(txt_km);
             grb_thongtinsp.Controls.Add(grB_chucnag);
             grb_thongtinsp.Controls.Add(label2);
             grb_thongtinsp.Controls.Add(txt_soluong);
@@ -78,12 +78,64 @@
             grb_thongtinsp.TabStop = false;
             grb_thongtinsp.Text = "Thông tin sản phẩm";
             // 
-            // txt_km
+            // cbb_km1
             // 
-            txt_km.Location = new Point(527, 195);
-            txt_km.Name = "txt_km";
-            txt_km.Size = new Size(235, 27);
-            txt_km.TabIndex = 38;
+            cbb_km1.FormattingEnabled = true;
+            cbb_km1.Location = new Point(527, 190);
+            cbb_km1.Name = "cbb_km1";
+            cbb_km1.Size = new Size(235, 28);
+            cbb_km1.TabIndex = 48;
+            // 
+            // cbb_nhacungcap
+            // 
+            cbb_nhacungcap.FormattingEnabled = true;
+            cbb_nhacungcap.Location = new Point(532, 395);
+            cbb_nhacungcap.Name = "cbb_nhacungcap";
+            cbb_nhacungcap.Size = new Size(235, 28);
+            cbb_nhacungcap.TabIndex = 47;
+            // 
+            // cbb_thuonghieu
+            // 
+            cbb_thuonghieu.FormattingEnabled = true;
+            cbb_thuonghieu.Location = new Point(527, 323);
+            cbb_thuonghieu.Name = "cbb_thuonghieu";
+            cbb_thuonghieu.Size = new Size(235, 28);
+            cbb_thuonghieu.TabIndex = 46;
+            // 
+            // cbb_danhmuc
+            // 
+            cbb_danhmuc.FormattingEnabled = true;
+            cbb_danhmuc.Location = new Point(527, 258);
+            cbb_danhmuc.Name = "cbb_danhmuc";
+            cbb_danhmuc.Size = new Size(235, 28);
+            cbb_danhmuc.TabIndex = 45;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(401, 403);
+            label4.Name = "label4";
+            label4.Size = new Size(125, 20);
+            label4.TabIndex = 43;
+            label4.Text = "Mã nhà cung cấp:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(401, 331);
+            label3.Name = "label3";
+            label3.Size = new Size(117, 20);
+            label3.TabIndex = 41;
+            label3.Text = "Mã thương hiệu:";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(401, 261);
+            label1.Name = "label1";
+            label1.Size = new Size(102, 20);
+            label1.TabIndex = 39;
+            label1.Text = "Mã danh mục:";
             // 
             // grB_chucnag
             // 
@@ -106,7 +158,7 @@
             btn_sua.ForeColor = Color.White;
             btn_sua.Image = Properties.Resources.wrench;
             btn_sua.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_sua.Location = new Point(144, 45);
+            btn_sua.Location = new Point(217, 54);
             btn_sua.Name = "btn_sua";
             btn_sua.Size = new Size(120, 48);
             btn_sua.TabIndex = 1;
@@ -124,7 +176,7 @@
             btn_them.ForeColor = Color.White;
             btn_them.Image = Properties.Resources.add;
             btn_them.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_them.Location = new Point(6, 45);
+            btn_them.Location = new Point(34, 54);
             btn_them.Name = "btn_them";
             btn_them.Size = new Size(120, 48);
             btn_them.TabIndex = 0;
@@ -205,54 +257,6 @@
             lbl_masp.TabIndex = 0;
             lbl_masp.Text = "Mã sản phẩm chi tiết:";
             // 
-            // txt_dm
-            // 
-            txt_dm.Location = new Point(527, 258);
-            txt_dm.Name = "txt_dm";
-            txt_dm.Size = new Size(235, 27);
-            txt_dm.TabIndex = 40;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(401, 261);
-            label1.Name = "label1";
-            label1.Size = new Size(102, 20);
-            label1.TabIndex = 39;
-            label1.Text = "Mã danh mục:";
-            // 
-            // txt_th
-            // 
-            txt_th.Location = new Point(527, 328);
-            txt_th.Name = "txt_th";
-            txt_th.Size = new Size(235, 27);
-            txt_th.TabIndex = 42;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(401, 331);
-            label3.Name = "label3";
-            label3.Size = new Size(117, 20);
-            label3.TabIndex = 41;
-            label3.Text = "Mã thương hiệu:";
-            // 
-            // txt_ncc
-            // 
-            txt_ncc.Location = new Point(527, 400);
-            txt_ncc.Name = "txt_ncc";
-            txt_ncc.Size = new Size(235, 27);
-            txt_ncc.TabIndex = 44;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(401, 403);
-            label4.Name = "label4";
-            label4.Size = new Size(125, 20);
-            label4.TabIndex = 43;
-            label4.Text = "Mã nhà cung cấp:";
-            // 
             // Form_ChiTietSanPham
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -263,6 +267,7 @@
             Name = "Form_ChiTietSanPham";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Form_ChiTietSanPham";
+            Load += Form_ChiTietSanPham_Load;
             grb_thongtinsp.ResumeLayout(false);
             grb_thongtinsp.PerformLayout();
             grB_chucnag.ResumeLayout(false);
@@ -285,12 +290,12 @@
         private Button btn_sua;
         private Button btn_them;
         private ComboBox cbb_km;
-        private TextBox txt_km;
-        private TextBox txt_ncc;
         private Label label4;
-        private TextBox txt_th;
         private Label label3;
-        private TextBox txt_dm;
         private Label label1;
+        private ComboBox cbb_nhacungcap;
+        private ComboBox cbb_thuonghieu;
+        private ComboBox cbb_danhmuc;
+        private ComboBox cbb_km1;
     }
 }
