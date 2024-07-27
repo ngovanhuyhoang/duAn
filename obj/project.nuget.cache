@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IrEubJe/E4o=",
+  "dgSpecHash": "ougntU5rIBY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\LENOVO\\source\\repos\\duAn\\DA1_formLogin.csproj",
+  "projectFilePath": "C:\\Users\\LENOVO\\Source\\Repos\\duAn\\DA1_formLogin.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

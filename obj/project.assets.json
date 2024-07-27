@@ -2906,9 +2906,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LENOVO\\source\\repos\\duAn\\DA1_formLogin.csproj",
+      "projectUniqueName": "C:\\Users\\LENOVO\\Source\\Repos\\duAn\\DA1_formLogin.csproj",
       "projectName": "DA1_formLogin",
-      "projectPath": "C:\\Users\\LENOVO\\source\\repos\\duAn\\DA1_formLogin.csproj",
+      "projectPath": "C:\\Users\\LENOVO\\Source\\Repos\\duAn\\DA1_formLogin.csproj",
       "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\LENOVO\\Source\\Repos\\duAn\\obj\\",
       "projectStyle": "PackageReference",
@@ -2932,8 +2932,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\LENOVO\\source\\repos\\Dal_da1\\Dal_da1.csproj": {
-              "projectPath": "C:\\Users\\LENOVO\\source\\repos\\Dal_da1\\Dal_da1.csproj"
+            "C:\\Users\\LENOVO\\Source\\Repos\\Dal_da1\\Dal_da1.csproj": {
+              "projectPath": "C:\\Users\\LENOVO\\Source\\Repos\\Dal_da1\\Dal_da1.csproj"
             }
           }
         }
