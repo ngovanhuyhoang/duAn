@@ -125,6 +125,7 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(440, 530);
             panel2.TabIndex = 3;
+            panel2.Paint += panel2_Paint;
             // 
             // txt_password_login
             // 
@@ -225,6 +226,7 @@
             txt_Login_Username.Name = "txt_Login_Username";
             txt_Login_Username.Size = new Size(368, 28);
             txt_Login_Username.TabIndex = 0;
+            txt_Login_Username.TextChanged += txt_Login_Username_TextChanged;
             // 
             // label5
             // 

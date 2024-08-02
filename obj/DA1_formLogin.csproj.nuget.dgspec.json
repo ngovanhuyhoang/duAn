@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LENOVO\\source\\repos\\duAn\\DA1_formLogin.csproj": {}
+    "C:\\Users\\phung\\Downloads\\SU24_PRO_DuAn_1\\duAn\\DA1_formLogin.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LENOVO\\source\\repos\\Dal_da1\\Dal_da1.csproj": {
+    "C:\\Users\\phung\\Downloads\\SU24_PRO_DuAn_1\\Dal_da1\\Dal_da1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LENOVO\\source\\repos\\Dal_da1\\Dal_da1.csproj",
+        "projectUniqueName": "C:\\Users\\phung\\Downloads\\SU24_PRO_DuAn_1\\Dal_da1\\Dal_da1.csproj",
         "projectName": "Dal_da1",
-        "projectPath": "C:\\Users\\LENOVO\\source\\repos\\Dal_da1\\Dal_da1.csproj",
-        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LENOVO\\source\\repos\\Dal_da1\\obj\\",
+        "projectPath": "C:\\Users\\phung\\Downloads\\SU24_PRO_DuAn_1\\Dal_da1\\Dal_da1.csproj",
+        "packagesPath": "C:\\Users\\phung\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\phung\\Downloads\\SU24_PRO_DuAn_1\\Dal_da1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\phung\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -81,24 +81,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\LENOVO\\source\\repos\\duAn\\DA1_formLogin.csproj": {
+    "C:\\Users\\phung\\Downloads\\SU24_PRO_DuAn_1\\duAn\\DA1_formLogin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LENOVO\\source\\repos\\duAn\\DA1_formLogin.csproj",
+        "projectUniqueName": "C:\\Users\\phung\\Downloads\\SU24_PRO_DuAn_1\\duAn\\DA1_formLogin.csproj",
         "projectName": "DA1_formLogin",
-        "projectPath": "C:\\Users\\LENOVO\\source\\repos\\duAn\\DA1_formLogin.csproj",
-        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LENOVO\\source\\repos\\duAn\\obj\\",
+        "projectPath": "C:\\Users\\phung\\Downloads\\SU24_PRO_DuAn_1\\duAn\\DA1_formLogin.csproj",
+        "packagesPath": "C:\\Users\\phung\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\phung\\Downloads\\SU24_PRO_DuAn_1\\duAn\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\phung\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -114,8 +114,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\LENOVO\\source\\repos\\Dal_da1\\Dal_da1.csproj": {
-                "projectPath": "C:\\Users\\LENOVO\\source\\repos\\Dal_da1\\Dal_da1.csproj"
+              "C:\\Users\\phung\\Downloads\\SU24_PRO_DuAn_1\\Dal_da1\\Dal_da1.csproj": {
+                "projectPath": "C:\\Users\\phung\\Downloads\\SU24_PRO_DuAn_1\\Dal_da1\\Dal_da1.csproj"
               }
             }
           }
@@ -153,7 +153,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

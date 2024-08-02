@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace DA1_formLogin
 {
@@ -15,13 +16,16 @@ namespace DA1_formLogin
         public bool isExit = true;
         public event EventHandler Logout;
         private string userRole; // Lưu tên chức vụ
+        private string currentUsername;
 
 
-        public Mainform(bool isAdmin)
+        public Mainform(bool isAdmin, string username)
         {
             InitializeComponent();
             this.userRole = isAdmin ? "admin" : "user"; // Gán quyền của người dùng
+            this.currentUsername = username;
         }
+       
         private Form formchild_hientai;
         private void openChildForm(Form childForm)
         {
@@ -43,7 +47,7 @@ namespace DA1_formLogin
 
         private void btn_sell_Click(object sender, EventArgs e)
         {
-            openChildForm(new Form_Ql_Banhang());
+            openChildForm(new Form_Ql_Banhang(currentUsername));
         }
 
         private void btn_hanghoa_Click(object sender, EventArgs e)
@@ -109,6 +113,11 @@ namespace DA1_formLogin
         private void btn_NhapHang_Click(object sender, EventArgs e)
         {
             openChildForm(new Form_QL_NhapHang());
+        }
+
+        private void panel_body_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

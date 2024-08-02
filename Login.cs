@@ -59,9 +59,7 @@ namespace DA1_formLogin
                 if (user != null)
                 {
                     bool isAdmin = user.TenChucVu.ToLower() == "admin";
-                     // Kiểm tra quyền của người dùng
-
-                    Mainform mainform = new Mainform(isAdmin);
+                    Mainform mainform = new Mainform(isAdmin, username);
                     mainform.Show();
                     this.Hide();
                     mainform.Logout += Mainform_Logout;
@@ -85,6 +83,16 @@ namespace DA1_formLogin
         private void btn_forgotpass_Click(object sender, EventArgs e)
         {
             //MessageBox.Show("có mỗi cái mật khẩu cũng quên :))");
+        }
+
+        private void txt_Login_Username_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

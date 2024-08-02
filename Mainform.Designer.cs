@@ -217,6 +217,7 @@
             panel_body.Name = "panel_body";
             panel_body.Size = new Size(1161, 782);
             panel_body.TabIndex = 1;
+            panel_body.Paint += panel_body_Paint;
             // 
             // Mainform
             // 
